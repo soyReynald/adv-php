@@ -21,6 +21,15 @@
             echo $i."Reference " . $ttoalOfReferences[$keys[$i]];
         }
 
+
+        // ..
+        $phone_numbers = [
+            "Reynald" => "809-871-8750",
+            "Adriel" => "415-492-4856", // Sample porpuses
+            "Raul" => "415-492-7186", 
+            "Fran" => "415-492-7186", 
+            ".." =
+        ];
     ?>
 </body>
 </html>
