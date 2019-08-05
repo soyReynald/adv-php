@@ -1,5 +1,5 @@
 # Advance PHP Practices - Focused on the BoomBiblico Project - CS Project
-## Porpouse
+## Purpose
 
 This is the snippets repository for the adventist game BoomBiblico.
 The game has its own organization and scheduled activities, you can
