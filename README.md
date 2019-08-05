@@ -7,5 +7,5 @@ see more about it in here: https://boombiblico.interamerica.org/uploaded_assets/
 
 You can collaborate with us by clicking:
 
-here if english -> (https://forms.gle/yGwMgSL6A5yQ278H7)
-here if spanish -> (https://forms.gle/LTz9TykKYmHpk1TA6)
+### here if english -> (https://forms.gle/yGwMgSL6A5yQ278H7)
+### here if spanish -> (https://forms.gle/LTz9TykKYmHpk1TA6)
