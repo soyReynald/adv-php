@@ -21,7 +21,6 @@
             echo $i."Reference " . $ttoalOfReferences[$keys[$i]];
         }
 
-
         // ..
         $phone_numbers = [
             "Reynald" => "809-871-8750",
