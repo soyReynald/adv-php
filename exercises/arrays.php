@@ -8,7 +8,6 @@
 </head>
 <body>
     <?php 
-        // .. 
         $numbers = [1,3,5,7,9];
 
         $totalOfReferences = count(numbers);
@@ -21,7 +20,6 @@
             echo $i."Reference " . $ttoalOfReferences[$keys[$i]];
         }
 
-        // ..
         $phone_numbers = [
             "Reynald" => "809-871-8750",
             "Adriel" => "415-492-4856", // Sample porpuses

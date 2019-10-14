@@ -1,11 +1,22 @@
-# Advance PHP Practices - Focused on the BoomBiblico Project - CS Project
-## Purpose
+# Cientificos Del Software PHP - Practices
+![master-ok](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK)
 
-This is the snippets repository for the adventist game BoomBiblico.
-The game has its own organization and scheduled activities, you can
-see more about it in here: https://boombiblico.interamerica.org/uploaded_assets/82673
+This is a project oriented to beginners and intermediate PHP users who wants to improve and collaborate on the App Development industries.
 
-You can collaborate with us by clicking:
+- [ ] Finish Practicing Basis
+- [ ] Develop a real world project
+- [ ] Finish improving and introducing to intermediate-advance
+- [ ] Pair programming, collaborations and more
+- [ ] Organize this list afresh
 
-### here if english -> (https://forms.gle/yGwMgSL6A5yQ278H7)
-### here if spanish -> (https://forms.gle/LTz9TykKYmHpk1TA6)
+## Our Website
+
+You can visit our website in [here](www.cientificosdelsoftware.com)
+
+## Want More?
+
+We will be creating a complete guide/tutorial series on our YouTube channel.
+You can visit our channel [here](https://www.youtube.com/user/cientificosdelsoft)
+
+
+### Not my glory but His ...
