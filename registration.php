@@ -1,12 +1,19 @@
-<?php
-$db['DB_HOST'] = "localhost";
-$db['DB_USER'] = "root";
-$db['DB_PASSWORD'] = "";
-$db['DB_NAME'] = "cs_";
+<?php include("resources/back/config.php"); 
+$db['username'] = $_POST['username'];
+$db['name'] = $_POST['name'];
+$db['email'] = $_POST['email'];
+$db['password'] = $_POST['pass'];
 
 foreach($db as $key => $value){
     define(strtoupper($key), $value);
 }
 
-$connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+$query = "INSERT INTO users('USERNAME', 'NAME', 'EMAIL', 'PASSWORD')";
+
+$insert_info_query = mysqli_query($query, $connection);
+
+if($insert_info_query){
+    echo "Connection success";
+}
+
 ?>

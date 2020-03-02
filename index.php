@@ -1,28 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CMS with PHP</title>
-    <meta name="charset" content="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-    <!-- Project oriented to create our Own CMS with PHP -->
-    <?php
-        $db['DB_HOST'] = "localhost";
-        $db['DB_USER'] = "root";
-        $db['DB_PASSWORD'] = "";
-        $db['DB_NAME'] = "cs_";
-        
-        foreach($db as $key => $value){
-            define(strtoupper($key), $value);
-        }
+<?php include("resources/back/config.php") ?>
+<?php include("resources/front/header.php"); ?>
+<div class="container">
 
-        $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    <h2>Login Formulary</h2>
+    <form action="login.php" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input name="username" type="text" class="username form-control">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input name="password" type="password" class="password form-control">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Login</button>
+        </div>
+    </form>
 
-        if($connection){
-            echo "Connection success";
-        }
-    ?>
-</body>
-</html>
+    <h2>Register Formulary</h2>
+    <form action="registration.php" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+                <input name="name" type="text" class="name form-control">
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+                <input name="username" type="text" class="username form-control">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+                <input name="email" type="text" class="username form-control">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+                <input name="password" type="password" class="username form-control">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Register</button>
+        </div>
+    </form>
+
+</div>
