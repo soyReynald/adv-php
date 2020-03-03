@@ -32,8 +32,8 @@
                 <input name="email" type="text" class="username form-control">
         </div>
         <div class="form-group">
-            <label for="password">Password:</label>
-                <input name="password" type="password" class="username form-control">
+            <label for="pass">Password:</label>
+                <input name="pass" type="password" class="password form-control">
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-success">Register</button>

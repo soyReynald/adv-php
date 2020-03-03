@@ -1,13 +1,12 @@
 <?php
-    $db['DB_HOST'] = "localhost";
-    $db['DB_USER'] = "root";
-    $db['DB_PASSWORD'] = "";
-    $db['DB_NAME'] = "cs_";
-    
-    foreach($db as $key => $value){
-        define(strtoupper($key), $value);
-    }
+$db['db_host'] = "localhost";
+$db['db_user'] = "root";
+$db['db_password'] = "";
+$db['db_name'] = "cs_";
 
-    $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+foreach($db as $key => $value){
+    define(strtoupper($key), $value);
+}
+$connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
 ?>

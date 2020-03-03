@@ -1,19 +1,22 @@
-<?php include("resources/back/config.php"); 
-$db['username'] = $_POST['username'];
-$db['name'] = $_POST['name'];
-$db['email'] = $_POST['email'];
-$db['password'] = $_POST['pass'];
+<?php 
+include("resources/back/config.php");
+session_start();
 
-foreach($db as $key => $value){
-    define(strtoupper($key), $value);
-}
+if(isset($_POST['username'])){
+    $username = $_POST['username'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['pass'];
 
-$query = "INSERT INTO users('USERNAME', 'NAME', 'EMAIL', 'PASSWORD')";
+    $query = "INSERT INTO users(username, name, email, pass) VALUES('$username', '$name', '$email', '$password')";
 
-$insert_info_query = mysqli_query($query, $connection);
+    $insert_info_query = mysqli_query($connection, $query);
 
-if($insert_info_query){
-    echo "Connection success";
+    if($insert_info_query){
+        echo "Connection success";
+    }
+}else{
+    echo "Error 512";
 }
 
 ?>
