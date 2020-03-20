@@ -1,43 +1,33 @@
-<?php include("resources/back/config.php") ?>
-<?php include("resources/front/header.php"); ?>
-<div class="container">
-
-    <h2>Login Formulary</h2>
-    <form action="login.php" method="post">
-        <div class="form-group">
-            <label for="username">Username:</label>
-            <input name="username" type="text" class="username form-control">
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input name="password" type="password" class="password form-control">
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-success">Login</button>
-        </div>
-    </form>
-
-    <h2>Register Formulary</h2>
-    <form action="registration.php" method="post">
-        <div class="form-group">
-            <label for="name">Name:</label>
-                <input name="name" type="text" class="name form-control">
-        </div>
-        <div class="form-group">
-            <label for="username">Username:</label>
-                <input name="username" type="text" class="username form-control">
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-                <input name="email" type="text" class="username form-control">
-        </div>
-        <div class="form-group">
-            <label for="pass">Password:</label>
-                <input name="pass" type="password" class="password form-control">
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-success">Register</button>
-        </div>
-    </form>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="lang" content="es">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP7 - reyoculto's guide</title>
+    <style>
+        span{
+            font-weight: bold;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="code-block">
+    <span>Comparison</span>
+    <pre>
+        var_dump(1 === 1);
+    </pre>
+    <?php echo var_dump(1 === 1); ?>
 </div>
+<div class="code-block">
+    <span>Booleans</span>
+    <pre>
+        var_dump( boolval("1") );
+    </pre>
+    <?php echo var_dump( boolval("1") ); ?>
+</div>
+</body>
+</html>
