@@ -29,5 +29,68 @@
     </pre>
     <?php echo var_dump( boolval("1") ); ?>
 </div>
+<div class="code-block">
+    <span>Constantes</span>
+    <pre>
+        define("AUTOR", "Reynald Ramirez");
+        echo "El nombre del autor es: ". AUTOR;
+    </pre>
+    <?php 
+        define("AUTOR", "Reynald Ramirez");
+        echo "El nombre del autor es: ". AUTOR;
+    ?>
+</div>
+<div class="code-block">
+    <span>Constantes con true (permite ser minuscula)</span>
+    <pre>
+        define("AUTOR", "Reynald", true);
+        echo "El nombre del autor es: ". autor;
+    </pre>
+    <?php 
+        define("AUTOR", "Reynald", true);
+        echo "El nombre del autor es: ". autor;
+    ?>
+</div>
+<div class="code-block">
+    <span>Constantes predefinidas</span>
+    <pre>
+        echo "El nombre y ruta de este archivo es: ". __FILE__;
+    </pre>
+    <?php 
+        echo "El nombre y ruta de este archivo es: ". __FILE__;
+    ?>
+</div>
+<div class="code-block">
+    <span>String comparison (===)</span>
+    <pre>
+        $operacion = "Suma";
+        if(!strcmp("Suma", $operacion)){
+            echo "Estamos listos para realizar una suma ";
+        }
+        
+    </pre>
+    <?php 
+        $operacion = "Suma";
+        if(!strcmp("Suma", $operacion)){
+            echo "Estamos listos para realizar una suma ";
+        }
+    ?>
+</div>
+<div class="code-block">
+    <span>String comparison (==)</span>
+    <pre>
+        $operacion = "SUMA";
+        if(!strcasecmp("Suma", $operacion)){
+            echo "Estamos listos para realizar una suma ";
+        }
+        // strcasecmp() & strcmp() returns 0 if true and 1 if false
+    </pre>
+    <?php 
+        $operacion = "SUMA";
+        if(!strcasecmp("Suma", $operacion)){
+            echo "Estamos listos para realizar una suma de SUMA ";
+        }
+    ?>
+</div>
 </body>
 </html>
