@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora PHP</title>
     <style>
-        form label{
+        form label, select, input[type="submit"]{
             display: block;
         }
-        input[type="submit"]{
-            display: block;
-        }
+
     </style>
 </head>
 <body>
@@ -21,6 +19,12 @@
         <label for="num2">N&uacute;mero 2
             <input type="number" name="num2" id="num2">
         </label>
+        <select name="operacion" id="">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicaci&oacute;n</option>
+            <option value="division">Divisi&oacute;n</option>
+        </select>
         <input type="submit" value="Enviar" name="calcular" id="calcular">
     </form>
 </body>
