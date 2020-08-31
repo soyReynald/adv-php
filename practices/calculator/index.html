@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora PHP</title>
+    <style>
+        form label{
+            display: block;
+        }
+        input[type="submit"]{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="calcular.php" method="post">
+        <label for="num1">N&uacute;mero 1
+            <input type="number" name="num1" id="num1">
+        </label>
+        <label for="num2">N&uacute;mero 2
+            <input type="number" name="num2" id="num2">
+        </label>
+        <input type="submit" value="Enviar" name="calcular" id="calcular">
+    </form>
+</body>
+</html>
