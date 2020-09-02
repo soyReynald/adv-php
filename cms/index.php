@@ -7,7 +7,20 @@
 </head>
 <body>
     <div class="container">
-        
+        <?php 
+            $server = "localhost";
+            $user = "root";
+            $password = "";
+            $db = "facturacion";
+
+            $connection = mysqli_connect($server, $user, $password, $db);
+
+            if($connection){
+                echo "Connection successful";
+            }else{
+                echo "Connection error ". die();
+            }
+        ?>
     </div>
 </body>
 </html>
