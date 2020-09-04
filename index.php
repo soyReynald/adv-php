@@ -92,5 +92,26 @@
         }
     ?>
 </div>
+<div class="code-block">
+    <span>getrandmax()</span>
+    <pre>
+        echo getrandmax();
+    </pre>
+    <?php 
+        echo getrandmax(); // Devuelve el valor maximo que puede generar la llamada a rand()
+    ?>
+</div>
+<div class="code-block">
+    <span>rand()</span>
+    <pre>
+        echo rand();
+    </pre>
+    <?php 
+        echo rand(); 
+        // Devuelve un valor aleatorio
+        // a esta funcion se le puede pasar dos parametros: min y max => rand(min, max)
+        // rand(0,10) // devolveria un valor aleatorio entre 0 y 10
+    ?>
+</div>
 </body>
 </html>
