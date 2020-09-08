@@ -95,8 +95,8 @@ require 'wepay.php';
 // application settings
 $account_id    = 123456789;
 $client_id     = 123456789;
-$client_secret = "1a3b5c7d9";
-$access_token  = "STAGE_8a19aff55b85a436dad5cd1386db1999437facb5914b494f4da5f206a56a5d20";
+$client_secret = "";
+$access_token  = "";
 
 // credit card id to charge
 $credit_card_id = 123456789;
