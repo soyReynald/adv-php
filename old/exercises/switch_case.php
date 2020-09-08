@@ -15,9 +15,30 @@
         </div>
         <div class="form-group">
             <label for="edad">Edad</label>
-                <input type="text" class="form-control" name="edad">
+                <input type="number" class="form-control" name="edad">
         </div>
-        <input type="submit" value="Enviar" class="btn-primary mt-3">
-    </form>
+        <input type="submit" value="Enviar" class="btn-primary mt-3" name="envio">
+    
+        <?php
+            if(isset($_POST['envio'])){
+                $nombre = $_POST['nombre'];
+                $edad = $_POST['edad'];
+                switch (true){
+                    case $edad <= 40:
+                        echo "Eres j&oacute;ven";
+                    break;
+                    case $edad < 18:
+                        echo "Eres menor de edad";
+                    break;
+                    case $edad <= 65:
+                        echo "Edad avanzada";
+                    break;
+                    default:
+                        echo "Debes cuidarte";
+                }
+            }
+            
+        ?>
+        </form>
 </body>
 </html>
