@@ -24,11 +24,11 @@
                 $nombre = $_POST['nombre'];
                 $edad = $_POST['edad'];
                 switch (true){
-                    case $edad <= 40:
-                        echo "Eres j&oacute;ven";
-                    break;
                     case $edad < 18:
                         echo "Eres menor de edad";
+                    break;
+                    case $edad <= 40:
+                        echo "Eres j&oacute;ven";
                     break;
                     case $edad <= 65:
                         echo "Edad avanzada";
@@ -37,7 +37,6 @@
                         echo "Debes cuidarte";
                 }
             }
-            
         ?>
         </form>
 </body>
