@@ -1,0 +1,248 @@
+/*****************************************************/
+/*** 	Author: 	Reynald Ramírez 			 *****/
+/***    Date: 		10/5/2014					 *****/
+/***	TO:			cientificosdelsoftware.com 	 *****/
+/*****************************************************/ 		
+
+/** Reglas principales **/
+body{
+	font-family: "Agency FB", Tahoma, Verdana;
+	background-color: #000;
+	color: #fff;
+}
+header{
+
+    max-width:560px;
+    margin:auto;
+
+
+}
+.cortina{
+	margin: 0px auto;
+	width: 100%;
+	background-color: #CCC;
+	opacity: 0.4;
+	color: #000;
+	-webkit-transition-duration: 4s;
+	transition-duration: 4s;
+}
+
+.cortina:hover{
+	opacity: 1;
+}
+.video{
+
+    height:0px;
+    width:100%;
+    max-width:560px;
+    padding-top:56.25%;
+    position:relative;
+
+}
+
+.video iframe{
+
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+
+}
+
+#contenedor{
+	margin: 0px auto 0px auto;
+	max-width: 560px;
+	min-width: 100px;
+}
+
+
+/*** Menu ***/
+.menu{
+	z-index: 5;
+	/*border: 1px solid #fff;*/
+	text-align: center;
+}
+
+.menu h3{
+	margin-bottom: 2px;
+}
+/* Imgs del menu */
+/*Imagenes desc */
+.opc1{
+	background-image: url(img/piedra_desc.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.opc2{
+	background-image: url(img/papel_desc.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.opc3{
+	background-image: url(img/tijera_desc.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	transition: 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.opc4{
+	background-image: url(img/lagarto_desc.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	transition: 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.opc5{
+	background-image: url(img/spock_desc.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	transition: 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+/* hovers */
+.opc1:hover{
+	background-image: url(img/piedra_act.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.opc2:hover{
+	background-image: url(img/papel_act.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.opc3:hover{
+	background-image: url(img/tijera_act.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.opc4:hover{
+	background-image: url(img/lagarto_act.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.opc5:hover{
+	background-image: url(img/spock_act.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 104px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+/*** Clases para el tablero  ***/
+.tit_cuerpo{
+	margin-top: 2px;
+	margin-bottom: 1px;
+}
+
+.juego{
+	border: 1px dashed #ccc;
+	width: 100%;
+}
+
+#mostrador{
+	padding-left: 5px;
+	width: 50%;
+	display: inline-block;
+}
+#mostrador p{
+	margin-bottom: 0px;
+}
+#eleccion{
+	font-size: 28px;
+	color: rgba(200, 67, 67, 1);
+}
+#maq-eleccion{
+	font-size: 28px;
+	color: rgba(26, 137, 28, 1);
+}
+#resultado{
+	text-align: center;
+	width: 100px;
+	float: right;
+	border: 1px solid rgba(83, 83, 83, 0.65);
+	color: red;
+	font-size: 18px;
+}
+
+
+/**Footer ***/
+
+footer{
+	padding: 15px;
+	height: 75px;
+	background: url(img/log_footer.png) no-repeat right top;
+}
+
+footer:hover{
+	cursor: pointer;
+}
+
+footer a{
+	visibility: hidden;
+}

@@ -1,0 +1,6 @@
+[02-Dec-2019 00:56:36 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cdsoftware/public_html/yeli/clientes.php on line 10
+[02-Dec-2019 00:56:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cdsoftware/public_html/yeli/clientes.php on line 49
+[02-Dec-2019 00:56:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/cdsoftware/public_html/yeli/clientes.php on line 51
+[02-Dec-2019 00:57:03 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cdsoftware/public_html/yeli/clientes.php on line 10
+[02-Dec-2019 00:57:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cdsoftware/public_html/yeli/clientes.php on line 49
+[02-Dec-2019 00:57:03 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/cdsoftware/public_html/yeli/clientes.php on line 51

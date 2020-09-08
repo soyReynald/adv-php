@@ -1,0 +1,300 @@
+/***********************************************/
+/*	Made by: Reynald Ramirez 				   */
+/*	Date: 10/18/2015						   */
+/*	Project: App for Cavelo Velo			   */
+/***********************************************/
+
+body{
+	background: #0e780e;
+	color: #fff;
+}
+
+/*Fuentes personalizadas**/
+@font-face{
+	font-family: titulosForm;
+	src: url(fonts/tw-cen-mt.woff);
+}
+
+/*Reseteo*/
+ul{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+h1.titulo{
+	font-size: 42px;
+	font-family: titulosForm, Helvetica, sans-serif;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+
+.title-sec{
+	margin: 0px;
+	font-family: titulosForm;
+	margin-bottom: 10px;
+	font-style: normal;
+	color: #fff;
+	font-size: 22px;
+	margin-top: 10px;
+
+}
+.list_opt{
+	display: inline-block;
+	float: left;
+	margin-left: 35px;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.list_opt>a{
+	text-decoration: none;
+	color: #fff;
+
+}
+
+.list_opt>a:hover{
+	text-decoration: underline;
+}
+.little{
+	float: right;
+}
+
+.principal-body{
+	display: block;
+	clear: both;
+	width: 900px;
+	margin: 0px auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 395px;
+	background: #10132e;
+}
+
+.menu{
+	width: 900px;
+	margin: 0px auto;
+	height: 43px;
+	display: block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	/* [disabled]border-right-width: medium; */
+	border-right-style: none;
+	border-right-color: #7E7E7E;
+	border-top: thick solid #7E7E7E;
+	/* [disabled]border-left-width: medium; */
+	border-left-style: none;
+	/* [disabled]border-left-color: #7E7E7E; */
+	border-bottom: thick solid #7E7E7E;
+}
+
+.diagnostico {
+	float: none;
+	display: block;
+	clear: none;
+}
+#body-movement form {
+	width: 345px;
+	display: block;
+	float:left;
+	
+}
+
+.body-movement{
+	padding: 0px 0px 20px 13px;
+	background: #10132e;
+}
+#sec-head .line {
+	display: block;
+}
+
+#sec-head cite {
+	color: #D5D5D5;
+	font-size: 18px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+.apart {
+	width: 96%;
+	height: 64px;
+	padding-left: 26px;
+	padding-top: 17px;
+	background-color: #1E1F2C;
+}
+#menu-listado {
+	list-style-type: none;
+}
+
+.formulario input{
+	display: block;
+}
+
+.formulario .info_txt{
+	height: 25px;
+	width: 216px;
+	border: 2px solid #0b0d20;
+	-moz-border: 2px solid #0b0d20;
+	-webkit-border: 2px solid #0b0d20;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+.select_info{
+	width: 345px !important;
+    height: 30px !important;
+}
+
+.formulario label{
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	font-family: titulosForm;
+	font-style: italic;
+	display: block;
+	margin-top: 10px;
+}
+
+.threatmentItem{
+	font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    font-family: titulosForm;
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+#threatments-area{
+	background: rgba(0, 0, 0, 0.4);
+    padding: 10px !important;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}
+
+.process{
+	background: rgba(0, 0, 0, 0.4);
+    padding: 10px !important;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 15px !important;
+    margin-top: 15px !important;
+    background: #1E1F2C;
+	color: #fff;
+}
+
+.proceso_area{
+	background: #1E1F2C;
+	color: #fff;
+}
+
+#threatments-area h4{
+	font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-family: titulosForm;
+    font-style: normal;
+    margin: 0px;
+    padding-bottom: 4px;
+}
+
+#threatment_proc{
+	background: #1E1F2C;
+	color: #fff;
+}
+
+#products_taken{
+	background: rgba(0, 0, 0, 0.4);
+    padding: 10px !important;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 15px !important;
+    margin-top: 15px !important;
+    background: #1E1F2C;
+	color: #fff;
+}
+
+.products-area{
+	background: rgba(0, 0, 0, 0.4);
+    padding: 10px !important;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}
+
+.products-area h4{
+	font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-family: titulosForm;
+    font-style: normal;
+    margin: 0px;
+    padding-bottom: 4px;	
+}
+.customer_profile{
+    margin-top: 165px;
+    width: 50%;
+    float: right;
+    display: block;
+}
+
+.profile_tits{
+	font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-family: titulosForm;
+    font-style: normal;
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.customer_profile span{
+	font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    font-family: titulosForm;
+    font-style: normal;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.customer_profile .name{
+	font-size: 22px;
+}
+
+.cliente{
+	color: #ccc;
+    margin: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.38);
+    padding: 15px;
+    width: 95%;
+}
+
+.add_item{
+	margin-top: -10px;
+}
+
+.boton_last{
+	margin: 20px 0px;
+    background: #0A0B1C;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: #AFA0A0;
+    font-weight: bold;
+}
+
+.boton_last:hover{
+	color: #fff;
+	background: #000;
+	cursor: pointer;
+}

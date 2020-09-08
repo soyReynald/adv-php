@@ -1,0 +1,2 @@
+[08-Sep-2020 16:34:59 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cdsoftware/public_html/cientificosdelsoftware.net/cavelo/clientes.php on line 34
+[08-Sep-2020 16:36:23 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cdsoftware/public_html/cientificosdelsoftware.net/cavelo/includes/conexion.php on line 2
