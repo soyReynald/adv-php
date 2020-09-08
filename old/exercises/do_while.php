@@ -25,9 +25,9 @@
             if(isset($_POST['envio'])){
                 $number = $_POST['number'];
                 $aux = 1;
-                while($aux <= $number){
+                do{
                     echo "<span>".$aux++."</span>";
-                }
+                }while($aux <= $number);
             }
         ?>
         </form>
