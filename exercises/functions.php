@@ -15,7 +15,16 @@
             }
         }
 
-        echo(toUpper("Practicando PHP en Aldereca", false));
+        echo toUpper("Practicando PHP en Aldereca", false);
+
+        print("<br />");
+        function increase(&$value){ 
+            $value++;
+            return $value; 
+        }
+        $number = 4;
+        echo increase($number) . "<br/>";
+        echo $number;
     ?>
 </body>
 </html>
