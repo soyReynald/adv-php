@@ -92,5 +92,39 @@
         }
     ?>
 </div>
+<div class="code-block">
+    <span>getrandmax()</span>
+    <pre>
+        echo getrandmax();
+    </pre>
+    <?php 
+        echo getrandmax(); // Devuelve el valor maximo que puede generar la llamada a rand()
+    ?>
+</div>
+<div class="code-block">
+    <span>rand()</span>
+    <pre>
+        echo rand();
+    </pre>
+    <?php 
+        echo rand(); 
+        // Devuelve un valor aleatorio
+        // a esta funcion se le puede pasar dos parametros: min y max => rand(min, max)
+        // rand(0,10) // devolveria un valor aleatorio entre 0 y 10
+    ?>
+</div>
+<div class="code-block">
+    <span>Casting</span>
+    <pre>
+        $num1 = "5";
+        echo (int) $num1;
+    </pre>
+    <?php 
+        $num1 = "5";
+        $num1 = (int) $num1;
+        echo gettype($num1);
+        // El lenguaje PHP es implicito por lo tanto, interpreta el tipo de una variable por su contenido sin que esta lo exprese de manera directa
+    ?>
+</div>
 </body>
 </html>

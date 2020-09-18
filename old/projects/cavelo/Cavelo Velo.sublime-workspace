@@ -1,0 +1,490 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getElements",
+				"getElementsByClassName(${0:names})	Element"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 927,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "nuevo.php",
+			"settings":
+			{
+				"buffer_size": 9451,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "includes/header.php",
+			"settings":
+			{
+				"buffer_size": 527,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "estilos.css",
+			"settings":
+			{
+				"buffer_size": 5141,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "clientes.php",
+			"settings":
+			{
+				"buffer_size": 2025,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "includes/conexion.php",
+			"settings":
+			{
+				"buffer_size": 238,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/cavelo_velo",
+		"/C/wamp/www/cavelo_velo/app",
+		"/C/wamp/www/cavelo_velo/app/includes"
+	],
+	"file_history":
+	[
+		"/C/Users/ADMI/Downloads/php-programacion-curso-mysql-html-desarrollador-web.html",
+		"/C/wamp/www/cavelo_velo/app/comprobacion.php",
+		"/C/wamp/www/cavelo_velo/app/includes/coneccion.php",
+		"/C/wamp/www/cavelo_velo/app/includes/header.php",
+		"/C/wamp/www/cavelo_velo/app/suma.php",
+		"/C/wamp/www/cavelo_velo/app/index.php",
+		"/C/wamp/www/cavelo_velo/app/estilos.css",
+		"/C/wamp/www/prextos/tabs.html",
+		"/C/wamp/www/prextos/calculadora.html",
+		"/C/wamp/www/prextos/index.php",
+		"/C/wamp/www/prextos/suma.php",
+		"/C/wamp/www/map_app/includes/provincias.php",
+		"/C/wamp/www/map_app/includes/funciones.php",
+		"/C/wamp/www/map_app/func.php",
+		"/C/wamp/www/map_app/registros2.php",
+		"/C/wamp/www/map_app/registrosA.php",
+		"/C/wamp/www/map_app/app.php",
+		"/C/wamp/www/map_app/registros.php",
+		"/C/wamp/www/map_app/registrosPrueba.php",
+		"/C/Users/ADMI/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Users/ADMI/Documents/deflector.map",
+		"/C/wamp/www/map_app/includes/constantes.php",
+		"/C/wamp/www/map_app/funciones.php",
+		"/C/wamp/www/map_app/dirigentes.php",
+		"/C/wamp/www/map_app/adm.php",
+		"/C/Users/ADMI/Dropbox/Científicos del software/Proyectos internos & Dominios/Mapa Partido Reformista/Datos del Mapa/Base de dato. Samuel Marra.xlsx",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/comenzar-CERRADO.html",
+		"/C/Users/ADMI/Dropbox/Científicos del software/Pruebas/index.html",
+		"/C/Users/ADMI/Downloads/New folder/.htaccess",
+		"/C/Users/ADMI/Downloads/index.php",
+		"/C/Users/ADMI/Downloads/New folder/.htaccess.montool.1433379332.bak",
+		"/C/Users/ADMI/Dropbox/Científicos del software/Temas WP/Ocean Tower/newhome-ONLINE.html",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/comenzar.html",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/countnewbox.php",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/registrado-al-evento.html",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/css/formula-500.webflow.css",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/inscripcion_est_paso1.php",
+		"/C/Users/ADMI/Desktop/newPage.html",
+		"/C/Users/ADMI/Desktop/fancyapps-fancyBox-18d1712/slider/index2.html",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/conf-inscripcionf500-SCHECKOUT.php",
+		"/C/Users/ADMI/Desktop/fancyapps-fancyBox-18d1712/demo/index2.html",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/inscripcion_estll_stprv_paso2.php",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/Accesos La Formula 500.txt",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/inscripcion_estll_paso2.php",
+		"/C/Users/ADMI/Dropbox/La Academia - Leunam/Website/archivos web modificados/comenzar - Trabajar aqui/index.html",
+		"/F/Documentos/Reynald/pruebas/comenzar.html",
+		"/C/Users/ADMI/Dropbox/Formula 500 website/WEBSITE/entrevista.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"proceso_area",
+			"lastname",
+			"firstname",
+			"sql",
+			"conn",
+			"sql",
+			"link",
+			"tratamiento",
+			"threatments-area",
+			"name",
+			";\n",
+			"sec",
+			"nombre",
+			"RewriteCond",
+			"San Francisco",
+			"municipio",
+			"Duarte",
+			"af-element",
+			"js",
+			"src",
+			"href",
+			"media",
+			"rest",
+			"test",
+			"/* Created by Artisteer v4.2.0.60623 */\n\n\n\n.responsive body\n\n{\n\n   min-width: 240px;\n\n}\n\n  \n\n.responsive img \n\n{\n\n   -webkit-box-sizing: border-box;\n\n   -moz-box-sizing: border-box;\n\n   box-sizing: border-box;\n\n}  \n\n  \n\n.responsive .content-layout img,\n\n.responsive .content-layout video\n\n{\n\n   max-width: 100%;\n\n   height: auto !important;\n  \n  \n\n}\n\n\n\n.responsive.responsive-phone .content-layout img \n\n{\n\n   margin: 1%;\n\n}\n\n\n\n.responsive.responsive-phone .collage,\n\n.responsive.responsive-tablet .collage {\n\n   margin: 0 !important;\n\n}\n\n\n\n.responsive .content-layout .sidebar0, \n\n.responsive .content-layout .sidebar1, \n\n.responsive .content-layout .sidebar2 \n\n{\n\n   width: auto !important;\n\n}\n\n    \n\n.responsive .content-layout, \n\n.responsive .content-layout-row, \n\n.responsive .layout-cell \n\n{\n\n   padding: 0;\n\n   display: block;\n\n}\n\n    \n\n.responsive .image-caption-wrapper \n\n{\n\n   width: auto;\n\n}\n\n\n\n.responsive.responsive-tablet .vmenublock,\n\n.responsive.responsive-tablet .block\n\n{\n\n   margin-left: 1%;\n\n   margin-right: 1%;\n\n   width: 48%;\n\n   float: left;\n\n   -webkit-box-sizing: border-box;\n\n   -moz-box-sizing: border-box;\n\n   box-sizing: border-box;\n\n}\n\n\n\n.responsive .responsive-embed \n\n{\n\n   height: 0;\n\n   padding-bottom: 56.25%;\n\n   /* 16:9 */\n\n    position: relative;\n\n}\n\n\n\n.responsive .responsive-embed iframe,\n\n.responsive .responsive-embed object,\n\n.responsive .responsive-embed embed\n\n{\n\n   height: 100%;\n\n   left: 0;\n\n   position: absolute;\n\n   top: 0;\n\n   width: 100%;\n\n}\n\n\n\n.responsive .sheet\n\n{\n\n   width: auto !important;\n\n   min-width: 240px !important;\n\n   max-width: none !important;\n\n   margin-right: 1% !important;\n\n   margin-left: 1% !important;\n\n}\n\n\n\n#resp {\n\n   display: none;\n\n}\n\n\n\n@media all and (max-width: 768px)\n\n{\n\n    #resp, #resp-t { display: block; }\n\n    #resp-m { display: none; }\n\n}\n\n\n\n@media all and (max-width: 480px)\n\n{\n	\n	#banner_top{\n	display:none;\n}\n\n    #resp, #resp-m { display: block; }\n\n    #resp-t { display: none; }\n	\n	.responsive nav.nav{ text-align:left !important;}\n	\n	.nav .menu-btn{ margin-top:20px;}\n	\n	.banneritem{ display:none;}\n\n}\n\n\n\n#resp-desktop {\n\n   display: none;\n\n}\n\n#resp-tablet-landscape {\n\n   display: none;\n\n}\n\n#resp-tablet-portrait {\n\n   display: none;\n\n}\n\n#resp-phone-landscape {\n\n   display: none;\n\n}\n\n#resp-phone-portrait {\n\n   display: none;\n\n}\n\n\n\n@media (min-width: 1200px)\n\n{\n\n    #resp-desktop { display: block; }\n\n}\n\n\n\n@media (min-width: 980px) and (max-width: 1199px)\n\n{\n\n    #resp-tablet-landscape { display: block; }\n\n}\n\n\n\n@media (min-width: 768px) and (max-width: 979px)\n\n{\n\n    #resp-tablet-portrait { display: block; }\n\n}\n\n\n\n@media (min-width: 480px) and (max-width: 767px)\n\n{\n\n    #resp-phone-landscape { display: block; }\n\n\n}\n\n@media (max-width: 590px)\n\n{\n	.bp2{ display:none !important;}\n    #banner_top { display: none; }\n	.menu-top{ display:none;}\n	.default-responsive .header .logo{ margin: inherit !important; float:left;}\n	#bg_header{height:76px !important;}\n		\n}\n\n@media (max-width: 479px)\n\n{\n\n    #resp-phone-portrait { display: block; }\n\n}\n\n.responsive .header \n\n{\n\n   width: auto !important;\n\n   max-width: none !important;\n\n   min-height: 50px !important;\n\n   min-width: 0 !important;\n\n   text-align: center;\n\n}\n\n\n\n.default-responsive .header \n\n{\n\n   height: auto;\n\n}\n\n\n\n.default-responsive .header *\n\n{\n\n   position: relative;\n\n   text-align: center;\n\n   -webkit-transform: none !important;\n\n   -moz-transform: none !important;\n\n   -o-transform: none !important;\n\n   -ms-transform: none !important;\n\n   transform: none !important;\n\n}\n\n\n\n.default-responsive .header .headline, \n\n.default-responsive .header .slogan \n\n{\n\n   display: block !important;\n\n   top: 0 !important;\n\n   left: 0 !important;\n\n   margin: 2% !important;\n\n   text-align: center !important;\n\n}\n\n    \n\n.default-responsive .header .headline a, \n\n.default-responsive .header .slogan \n\n{\n\n   white-space: normal !important;\n\n}\n\n\n\n.default-responsive .header .logo\n\n{\n\n   display: inline-block;\n\n   margin: auto !important;\n\n   left: auto;\n\n   top: auto !important;\n\n   width: auto;\n\n   height: auto;\n\n}\n\n\n\n.responsive .header .slidenavigator \n\n{\n\n   position: absolute;\n\n}\n\n\n\n.default-responsive .header .positioncontrol \n\n{\n\n   top: auto !important;\n\n   right: auto !important;\n\n   bottom: auto !important;\n\n   left: auto !important;\n\n   width: auto;\n\n   height: auto;\n\n   margin: auto;\n\n}\n\n\n\n.responsive .header #flash-area\n\n{\n\n   display: none;\n\n}\n\n\n\n/* Search and other elements in header element directly */\n\n.default-responsive .header>.textblock\n\n{\n\n   position: relative !important;\n\n   display: block !important;\n\n   margin: 1% auto !important;\n\n   width: 75% !important;\n\n   top: auto !important;\n\n   right: auto !important;\n\n   bottom: auto !important;\n\n   left: auto !important;\n\n}\n\n\n\n.default-responsive .header .textblock \n\n{\n\n   position: relative !important;\n\n   display: block !important;\n\n   margin: auto !important;\n\n   left: 0 !important;\n\n   right: 0 !important;\n\n   top: auto !important;\n\n   height: auto !important;\n\n   width: auto;\n\n   background-image: none;\n\n}\n\n\n\n/* '.header *' used noram align, but for '.textblock *' we must force align because of preview */\n\n.responsive .header .textblock *\n\n{\n\n   text-align: center !important;\n\n}\n\n\n\n.default-responsive .header .shapes > .textblock,\n\n.default-responsive .header .slide-item > .textblock\n\n{\n\n   display: none !important;\n\n}\n\n\n\n.default-responsive .header .shapes > .textblock *\n\n{\n\n   text-align: center !important;\n\n   width: auto !important;\n\n   height: auto !important;\n\n   display: block;\n\n}\n\n\n\n.default-responsive .header .slider .textblock *\n\n{\n\n   text-align: center !important;\n\n   width: auto !important;\n\n   height: auto !important;\n\n   display: block;\n\n}\n\n\n\n/* For icons like facebook, rss, etc. */\n\n.responsive .header>.textblock>div \n\n{\n\n   width: 100%;\n\n}\n\n/* dynamic width nav */\n\n.responsive nav.nav,\n\n.responsive .nav-inner\n\n{\n\n   width: auto !important;\n\n   position: relative !important;\n\n   top: auto !important;\n\n   left: auto !important;\n\n   right: auto !important;\n\n   bottom: auto !important;\n\n   margin-top: 0;\n\n   margin-bottom: 0;\n\n   min-width: 0;\n\n}\n\n\n\n.responsive nav.nav\n\n{\n\n   min-width: 1%;\n\n}\n\n\n\n.responsive .nav \n\n{\n\n   padding-left: 0;\n\n   padding-right: 0;\n\n}\n\n\n\n/* full width hmenu, instead of inline-block */\n\n.responsive .nav ul.hmenu \n\n{\n\n   float: none;\n\n   text-align: center;\n\n   display: none;\n\n}\n\n\n\n/* elements on different lines */\n\n.responsive .nav ul.hmenu li,\n\n.responsive .hmenu-extra1,\n\n.responsive .hmenu-extra2\n\n{\n\n   float: none;\n\n}\n\n  \n\n/* horizontal margins */\n\n.responsive .nav ul.hmenu>li:first-child, \n\n.responsive .nav ul.hmenu>li:last-child, \n\n.responsive .nav ul.hmenu>li\n\n{\n\n   margin-left: 0;\n\n   margin-right: 0;\n\n}\n\n \n\n/* separator */ \n\n.responsive .nav ul.hmenu>li:before\n\n{\n\n   display: none;\n\n}\n\n\n\n/* vertical distance between items */\n\n.responsive .nav ul.hmenu a\n\n{\n\n   margin-top: 1px !important;\n\n   margin-bottom: 1px !important;\n\n   height: auto;\n\n   white-space: normal;\n\n}\n\n\n\n.responsive .nav ul.hmenu>li:first-child>a\n\n{\n\n   margin-top: 0 !important;\n\n}\n\n\n\n.responsive .nav ul.hmenu>li:last-child>a\n\n{\n\n   margin-bottom: 0 !important;\n\n}\n\n\n\n/* fixes for extended menu */\n\n.responsive .nav .ext, \n\n.responsive .nav ul.hmenu>li>ul, \n\n.responsive .nav ul.hmenu>li>ul>li,\n\n.responsive .nav ul.hmenu>li>ul>li a\n\n{\n\n   width: auto !important;\n\n}\n\n\n\n/* submenu position on hover */\n\n.responsive .nav ul.hmenu ul\n\n{\n\n   left: auto !important;\n\n   right: auto !important;\n\n   top: auto !important;\n\n   bottom: auto !important;\n\n   display: none !important;\n\n   position: relative !important;\n\n   visibility: visible !important;\n\n}\n\n\n\n.responsive .nav ul.hmenu li.active>ul\n\n{\n\n   display: block !important;\n\n}\n\n.responsive .nav ul.hmenu ul li.active>a\n\n{\n\n   font-weight: bold;\n\n}\n\n\n\n.nav .menu-btn \n\n{\n\n   border: 1px solid #404040;\n\n   border-radius: 3px;\n\n   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);\n\n   display: none;\n\n   -svg-background: linear-gradient(to bottom, #707070 0, #000 100%);\n\n   background: -ms-linear-gradient(top, #707070 0, #000 100%);\n\n   background: -moz-linear-gradient(top, #707070 0, #000 100%);\n\n   background: -o-linear-gradient(top, #707070 0, #000 100%);\n\n   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #707070), color-stop(1, #000));\n\n   background: -webkit-linear-gradient(top, #707070 0, #000 100%);\n\n   background: linear-gradient(to bottom, #707070 0, #000 100%);\n\n   margin: 3px;\n\n   outline: none;\n\n   padding: 5px;\n\n   position: relative;\n\n   vertical-align: bottom;\n\n   width: 20px;\n   \n   margin-top:10px;\n   \n   margin-left:5px;\n}\n\n.nivo-slice img{\n	display: inline-grid;\n}\n\n.nav .menu-btn span \n\n{\n\n   background: #E0E0E0;\n\n   border-radius: 2px;\n\n   display: block;\n\n   height: 3px;\n\n   margin: 3px 1px;\n\n   position: relative;\n\n   -moz-transition: background .2s;\n\n   -o-transition: background .2s;\n\n   -webkit-transition: background .2s;\n\n   transition: background .2s;\n\n}\n\n\n\n.nav .menu-btn:hover span\n\n{\n\n   background: #f3f3f3;\n\n}\n\n\n\n.responsive .nav .menu-btn \n\n{\n\n   display: inline-block;\n\n}\n\n\n\n.responsive .nav .hmenu.visible \n\n{\n\n   display: block;\n   background-color:#333;\n   filter: alpha(opacity=30);\n\n}\n\n\n\n.responsive .nav ul.hmenu>li>ul>li:first-child:after \n\n{\n\n   display: none;\n\n}\n\n.responsive .nav ul.hmenu ul a\n\n{\n\n   padding-left: 4% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul a\n\n{\n\n   padding-left: 6% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul ul a\n\n{\n\n   padding-left: 8% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul ul ul a\n\n{\n\n   padding-left: 10% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul ul ul ul a\n\n{\n\n   padding-left: 12% !important;\n\n}\n\n  \n\n.responsive .nav ul.hmenu>li>ul\n\n{\n\n   padding: 5px;\n\n}\n\n  \n\n.responsive .nav ul.hmenu>li>ul:before\n\n{\n\n   top: 0;\n\n   right: 0;\n\n   bottom: 0;\n\n   left: 0;\n\n}\n\n\n\n.responsive .content-layout, \n\n.responsive .content-layout-row, \n\n.responsive .layout-cell \n\n{\n\n   display: block;\n\n}\n\n\n\n.responsive .layout-cell \n\n{\n\n   width: auto !important;\n\n   height: auto !important;\n\n}\n\n\n\n.responsive .content-layout:after, \n\n.responsive .content-layout-row:after, \n\n.responsive .layout-cell:after \n\n{\n\n   content: \".\";\n\n   display: block;\n\n   height: 0;\n\n   clear: both;\n\n   visibility: hidden;\n\n}\n\n\n\n.responsive .post\n\n{\n\n   border-radius: 0;\n\n}\n\n\n\n.responsive .footer-inner\n\n{\n\n   width: auto;\n\n   padding: 2% !important;\n\n}\n\n.responsive .footer\n\n{\n\n   margin-top: 1%;\n\n}\n\n\n\n.responsive .responsive-tablet-layout-cell \n\n{\n\n   width: 50% !important;\n\n   float: left;\n\n   -webkit-box-sizing: border-box;\n\n   -moz-box-sizing: border-box;\n\n   box-sizing: border-box;\n\n}\n\n\n\n.responsive .responsive-layout-row-3 .responsive-tablet-layout-cell \n\n{\n\n   width: 33.33% !important;\n\n}\n\n\n\n.responsive.responsive-tablet .items-row .item ,\n\n.responsive.responsive-phone .items-row .item \n\n{\n\n    width: auto;\n\n    display: block;\n\nwidth",
+			"/* Created by Artisteer v4.2.0.60623 */\n\n\n\n.responsive body\n\n{\n\n   min-width: 240px;\n\n}\n\n  \n\n.responsive img \n\n{\n\n   -webkit-box-sizing: border-box;\n\n   -moz-box-sizing: border-box;\n\n   box-sizing: border-box;\n\n}  \n\n  \n\n.responsive .content-layout img,\n\n.responsive .content-layout video\n\n{\n\n   max-width: 100%;\n\n   height: auto !important;\n  \n  \n\n}\n\n\n\n.responsive.responsive-phone .content-layout img \n\n{\n\n   margin: 1%;\n\n}\n\n\n\n.responsive.responsive-phone .collage,\n\n.responsive.responsive-tablet .collage {\n\n   margin: 0 !important;\n\n}\n\n\n\n.responsive .content-layout .sidebar0, \n\n.responsive .content-layout .sidebar1, \n\n.responsive .content-layout .sidebar2 \n\n{\n\n   width: auto !important;\n\n}\n\n    \n\n.responsive .content-layout, \n\n.responsive .content-layout-row, \n\n.responsive .layout-cell \n\n{\n\n   padding: 0;\n\n   display: block;\n\n}\n\n    \n\n.responsive .image-caption-wrapper \n\n{\n\n   width: auto;\n\n}\n\n\n\n.responsive.responsive-tablet .vmenublock,\n\n.responsive.responsive-tablet .block\n\n{\n\n   margin-left: 1%;\n\n   margin-right: 1%;\n\n   width: 48%;\n\n   float: left;\n\n   -webkit-box-sizing: border-box;\n\n   -moz-box-sizing: border-box;\n\n   box-sizing: border-box;\n\n}\n\n\n\n.responsive .responsive-embed \n\n{\n\n   height: 0;\n\n   padding-bottom: 56.25%;\n\n   /* 16:9 */\n\n    position: relative;\n\n}\n\n\n\n.responsive .responsive-embed iframe,\n\n.responsive .responsive-embed object,\n\n.responsive .responsive-embed embed\n\n{\n\n   height: 100%;\n\n   left: 0;\n\n   position: absolute;\n\n   top: 0;\n\n   width: 100%;\n\n}\n\n\n\n.responsive .sheet\n\n{\n\n   width: auto !important;\n\n   min-width: 240px !important;\n\n   max-width: none !important;\n\n   margin-right: 1% !important;\n\n   margin-left: 1% !important;\n\n}\n\n\n\n#resp {\n\n   display: none;\n\n}\n\n\n\n@media all and (max-width: 768px)\n\n{\n\n    #resp, #resp-t { display: block; }\n\n    #resp-m { display: none; }\n\n}\n\n\n\n@media all and (max-width: 480px)\n\n{\n	\n	#banner_top{\n	display:none;\n}\n\n    #resp, #resp-m { display: block; }\n\n    #resp-t { display: none; }\n	\n	.responsive nav.nav{ text-align:left !important;}\n	\n	.nav .menu-btn{ margin-top:20px;}\n	\n	.banneritem{ display:none;}\n\n}\n\n\n\n#resp-desktop {\n\n   display: none;\n\n}\n\n#resp-tablet-landscape {\n\n   display: none;\n\n}\n\n#resp-tablet-portrait {\n\n   display: none;\n\n}\n\n#resp-phone-landscape {\n\n   display: none;\n\n}\n\n#resp-phone-portrait {\n\n   display: none;\n\n}\n\n\n\n@media (min-width: 1200px)\n\n{\n\n    #resp-desktop { display: block; }\n\n}\n\n\n\n@media (min-width: 980px) and (max-width: 1199px)\n\n{\n\n    #resp-tablet-landscape { display: block; }\n\n}\n\n\n\n@media (min-width: 768px) and (max-width: 979px)\n\n{\n\n    #resp-tablet-portrait { display: block; }\n\n}\n\n\n\n@media (min-width: 480px) and (max-width: 767px)\n\n{\n\n    #resp-phone-landscape { display: block; }\n\n\n}\n\n@media (max-width: 590px)\n\n{\n	.bp2{ display:none !important;}\n    #banner_top { display: none; }\n	.menu-top{ display:none;}\n	.default-responsive .header .logo{ margin: inherit !important; float:left;}\n	#bg_header{height:76px !important;}\n		\n}\n\n@media (max-width: 479px)\n\n{\n\n    #resp-phone-portrait { display: block; }\n\n}\n\n.responsive .header \n\n{\n\n   width: auto !important;\n\n   max-width: none !important;\n\n   min-height: 50px !important;\n\n   min-width: 0 !important;\n\n   text-align: center;\n\n}\n\n\n\n.default-responsive .header \n\n{\n\n   height: auto;\n\n}\n\n\n\n.default-responsive .header *\n\n{\n\n   position: relative;\n\n   text-align: center;\n\n   -webkit-transform: none !important;\n\n   -moz-transform: none !important;\n\n   -o-transform: none !important;\n\n   -ms-transform: none !important;\n\n   transform: none !important;\n\n}\n\n\n\n.default-responsive .header .headline, \n\n.default-responsive .header .slogan \n\n{\n\n   display: block !important;\n\n   top: 0 !important;\n\n   left: 0 !important;\n\n   margin: 2% !important;\n\n   text-align: center !important;\n\n}\n\n    \n\n.default-responsive .header .headline a, \n\n.default-responsive .header .slogan \n\n{\n\n   white-space: normal !important;\n\n}\n\n\n\n.default-responsive .header .logo\n\n{\n\n   display: inline-block;\n\n   margin: auto !important;\n\n   left: auto;\n\n   top: auto !important;\n\n   width: auto;\n\n   height: auto;\n\n}\n\n\n\n.responsive .header .slidenavigator \n\n{\n\n   position: absolute;\n\n}\n\n\n\n.default-responsive .header .positioncontrol \n\n{\n\n   top: auto !important;\n\n   right: auto !important;\n\n   bottom: auto !important;\n\n   left: auto !important;\n\n   width: auto;\n\n   height: auto;\n\n   margin: auto;\n\n}\n\n\n\n.responsive .header #flash-area\n\n{\n\n   display: none;\n\n}\n\n\n\n/* Search and other elements in header element directly */\n\n.default-responsive .header>.textblock\n\n{\n\n   position: relative !important;\n\n   display: block !important;\n\n   margin: 1% auto !important;\n\n   width: 75% !important;\n\n   top: auto !important;\n\n   right: auto !important;\n\n   bottom: auto !important;\n\n   left: auto !important;\n\n}\n\n\n\n.default-responsive .header .textblock \n\n{\n\n   position: relative !important;\n\n   display: block !important;\n\n   margin: auto !important;\n\n   left: 0 !important;\n\n   right: 0 !important;\n\n   top: auto !important;\n\n   height: auto !important;\n\n   width: auto;\n\n   background-image: none;\n\n}\n\n\n\n/* '.header *' used noram align, but for '.textblock *' we must force align because of preview */\n\n.responsive .header .textblock *\n\n{\n\n   text-align: center !important;\n\n}\n\n\n\n.default-responsive .header .shapes > .textblock,\n\n.default-responsive .header .slide-item > .textblock\n\n{\n\n   display: none !important;\n\n}\n\n\n\n.default-responsive .header .shapes > .textblock *\n\n{\n\n   text-align: center !important;\n\n   width: auto !important;\n\n   height: auto !important;\n\n   display: block;\n\n}\n\n\n\n.default-responsive .header .slider .textblock *\n\n{\n\n   text-align: center !important;\n\n   width: auto !important;\n\n   height: auto !important;\n\n   display: block;\n\n}\n\n\n\n/* For icons like facebook, rss, etc. */\n\n.responsive .header>.textblock>div \n\n{\n\n   width: 100%;\n\n}\n\n/* dynamic width nav */\n\n.responsive nav.nav,\n\n.responsive .nav-inner\n\n{\n\n   width: auto !important;\n\n   position: relative !important;\n\n   top: auto !important;\n\n   left: auto !important;\n\n   right: auto !important;\n\n   bottom: auto !important;\n\n   margin-top: 0;\n\n   margin-bottom: 0;\n\n   min-width: 0;\n\n}\n\n\n\n.responsive nav.nav\n\n{\n\n   min-width: 1%;\n\n}\n\n\n\n.responsive .nav \n\n{\n\n   padding-left: 0;\n\n   padding-right: 0;\n\n}\n\n\n\n/* full width hmenu, instead of inline-block */\n\n.responsive .nav ul.hmenu \n\n{\n\n   float: none;\n\n   text-align: center;\n\n   display: none;\n\n}\n\n\n\n/* elements on different lines */\n\n.responsive .nav ul.hmenu li,\n\n.responsive .hmenu-extra1,\n\n.responsive .hmenu-extra2\n\n{\n\n   float: none;\n\n}\n\n  \n\n/* horizontal margins */\n\n.responsive .nav ul.hmenu>li:first-child, \n\n.responsive .nav ul.hmenu>li:last-child, \n\n.responsive .nav ul.hmenu>li\n\n{\n\n   margin-left: 0;\n\n   margin-right: 0;\n\n}\n\n \n\n/* separator */ \n\n.responsive .nav ul.hmenu>li:before\n\n{\n\n   display: none;\n\n}\n\n\n\n/* vertical distance between items */\n\n.responsive .nav ul.hmenu a\n\n{\n\n   margin-top: 1px !important;\n\n   margin-bottom: 1px !important;\n\n   height: auto;\n\n   white-space: normal;\n\n}\n\n\n\n.responsive .nav ul.hmenu>li:first-child>a\n\n{\n\n   margin-top: 0 !important;\n\n}\n\n\n\n.responsive .nav ul.hmenu>li:last-child>a\n\n{\n\n   margin-bottom: 0 !important;\n\n}\n\n\n\n/* fixes for extended menu */\n\n.responsive .nav .ext, \n\n.responsive .nav ul.hmenu>li>ul, \n\n.responsive .nav ul.hmenu>li>ul>li,\n\n.responsive .nav ul.hmenu>li>ul>li a\n\n{\n\n   width: auto !important;\n\n}\n\n\n\n/* submenu position on hover */\n\n.responsive .nav ul.hmenu ul\n\n{\n\n   left: auto !important;\n\n   right: auto !important;\n\n   top: auto !important;\n\n   bottom: auto !important;\n\n   display: none !important;\n\n   position: relative !important;\n\n   visibility: visible !important;\n\n}\n\n\n\n.responsive .nav ul.hmenu li.active>ul\n\n{\n\n   display: block !important;\n\n}\n\n.responsive .nav ul.hmenu ul li.active>a\n\n{\n\n   font-weight: bold;\n\n}\n\n\n\n.nav .menu-btn \n\n{\n\n   border: 1px solid #404040;\n\n   border-radius: 3px;\n\n   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);\n\n   display: none;\n\n   -svg-background: linear-gradient(to bottom, #707070 0, #000 100%);\n\n   background: -ms-linear-gradient(top, #707070 0, #000 100%);\n\n   background: -moz-linear-gradient(top, #707070 0, #000 100%);\n\n   background: -o-linear-gradient(top, #707070 0, #000 100%);\n\n   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #707070), color-stop(1, #000));\n\n   background: -webkit-linear-gradient(top, #707070 0, #000 100%);\n\n   background: linear-gradient(to bottom, #707070 0, #000 100%);\n\n   margin: 3px;\n\n   outline: none;\n\n   padding: 5px;\n\n   position: relative;\n\n   vertical-align: bottom;\n\n   width: 20px;\n   \n   margin-top:10px;\n   \n   margin-left:5px;\n}\n\n.nivo-slice img{\n	display: inline-grid;\n}\n\n.nav .menu-btn span \n\n{\n\n   background: #E0E0E0;\n\n   border-radius: 2px;\n\n   display: block;\n\n   height: 3px;\n\n   margin: 3px 1px;\n\n   position: relative;\n\n   -moz-transition: background .2s;\n\n   -o-transition: background .2s;\n\n   -webkit-transition: background .2s;\n\n   transition: background .2s;\n\n}\n\n\n\n.nav .menu-btn:hover span\n\n{\n\n   background: #f3f3f3;\n\n}\n\n\n\n.responsive .nav .menu-btn \n\n{\n\n   display: inline-block;\n\n}\n\n\n\n.responsive .nav .hmenu.visible \n\n{\n\n   display: block;\n   background-color:#333;\n   filter: alpha(opacity=30);\n\n}\n\n\n\n.responsive .nav ul.hmenu>li>ul>li:first-child:after \n\n{\n\n   display: none;\n\n}\n\n.responsive .nav ul.hmenu ul a\n\n{\n\n   padding-left: 4% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul a\n\n{\n\n   padding-left: 6% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul ul a\n\n{\n\n   padding-left: 8% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul ul ul a\n\n{\n\n   padding-left: 10% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul ul ul ul a\n\n{\n\n   padding-left: 12% !important;\n\n}\n\n  \n\n.responsive .nav ul.hmenu>li>ul\n\n{\n\n   padding: 5px;\n\n}\n\n  \n\n.responsive .nav ul.hmenu>li>ul:before\n\n{\n\n   top: 0;\n\n   right: 0;\n\n   bottom: 0;\n\n   left: 0;\n\n}\n\n\n\n.responsive .content-layout, \n\n.responsive .content-layout-row, \n\n.responsive .layout-cell \n\n{\n\n   display: block;\n\n}\n\n\n\n.responsive .layout-cell \n\n{\n\n   width: auto !important;\n\n   height: auto !important;\n\n}\n\n\n\n.responsive .content-layout:after, \n\n.responsive .content-layout-row:after, \n\n.responsive .layout-cell:after \n\n{\n\n   content: \".\";\n\n   display: block;\n\n   height: 0;\n\n   clear: both;\n\n   visibility: hidden;\n\n}\n\n\n\n.responsive .post\n\n{\n\n   border-radius: 0;\n\n}\n\n\n\n.responsive .footer-inner\n\n{\n\n   width: auto;\n\n   padding: 2% !important;\n\n}\n\n.responsive .footer\n\n{\n\n   margin-top: 1%;\n\n}\n\n\n\n.responsive .responsive-tablet-layout-cell \n\n{\n\n   width: 50% !important;\n\n   float: left;\n\n   -webkit-box-sizing: border-box;\n\n   -moz-box-sizing: border-box;\n\n   box-sizing: border-box;\n\n}\n\n\n\n.responsive .responsive-layout-row-3 .responsive-tablet-layout-cell \n\n{\n\n   width: 33.33% !important;\n\n}\n\n\n\n.responsive.responsive-tablet .items-row .item ,\n\n.responsive.responsive-phone .items-row .item \n\n{\n\n    width: auto;\n\n    display: block;\n\ntest",
+			"/* Created by Artisteer v4.2.0.60623 */\n\n\n\n.responsive body\n\n{\n\n   min-width: 240px;\n\n}\n\n  \n\n.responsive img \n\n{\n\n   -webkit-box-sizing: border-box;\n\n   -moz-box-sizing: border-box;\n\n   box-sizing: border-box;\n\n}  \n\n  \n\n.responsive .content-layout img,\n\n.responsive .content-layout video\n\n{\n\n   max-width: 100%;\n\n   height: auto !important;\n  \n  \n\n}\n\n\n\n.responsive.responsive-phone .content-layout img \n\n{\n\n   margin: 1%;\n\n}\n\n\n\n.responsive.responsive-phone .collage,\n\n.responsive.responsive-tablet .collage {\n\n   margin: 0 !important;\n\n}\n\n\n\n.responsive .content-layout .sidebar0, \n\n.responsive .content-layout .sidebar1, \n\n.responsive .content-layout .sidebar2 \n\n{\n\n   width: auto !important;\n\n}\n\n    \n\n.responsive .content-layout, \n\n.responsive .content-layout-row, \n\n.responsive .layout-cell \n\n{\n\n   padding: 0;\n\n   display: block;\n\n}\n\n    \n\n.responsive .image-caption-wrapper \n\n{\n\n   width: auto;\n\n}\n\n\n\n.responsive.responsive-tablet .vmenublock,\n\n.responsive.responsive-tablet .block\n\n{\n\n   margin-left: 1%;\n\n   margin-right: 1%;\n\n   width: 48%;\n\n   float: left;\n\n   -webkit-box-sizing: border-box;\n\n   -moz-box-sizing: border-box;\n\n   box-sizing: border-box;\n\n}\n\n\n\n.responsive .responsive-embed \n\n{\n\n   height: 0;\n\n   padding-bottom: 56.25%;\n\n   /* 16:9 */\n\n    position: relative;\n\n}\n\n\n\n.responsive .responsive-embed iframe,\n\n.responsive .responsive-embed object,\n\n.responsive .responsive-embed embed\n\n{\n\n   height: 100%;\n\n   left: 0;\n\n   position: absolute;\n\n   top: 0;\n\n   width: 100%;\n\n}\n\n\n\n.responsive .sheet\n\n{\n\n   width: auto !important;\n\n   min-width: 240px !important;\n\n   max-width: none !important;\n\n   margin-right: 1% !important;\n\n   margin-left: 1% !important;\n\n}\n\n\n\n#resp {\n\n   display: none;\n\n}\n\n\n\n@media all and (max-width: 768px)\n\n{\n\n    #resp, #resp-t { display: block; }\n\n    #resp-m { display: none; }\n\n}\n\n\n\n@media all and (max-width: 480px)\n\n{\n	\n	#banner_top{\n	display:none;\n}\n\n    #resp, #resp-m { display: block; }\n\n    #resp-t { display: none; }\n	\n	.responsive nav.nav{ text-align:left !important;}\n	\n	.nav .menu-btn{ margin-top:20px;}\n	\n	.banneritem{ display:none;}\n\n}\n\n\n\n#resp-desktop {\n\n   display: none;\n\n}\n\n#resp-tablet-landscape {\n\n   display: none;\n\n}\n\n#resp-tablet-portrait {\n\n   display: none;\n\n}\n\n#resp-phone-landscape {\n\n   display: none;\n\n}\n\n#resp-phone-portrait {\n\n   display: none;\n\n}\n\n\n\n@media (min-width: 1200px)\n\n{\n\n    #resp-desktop { display: block; }\n\n}\n\n\n\n@media (min-width: 980px) and (max-width: 1199px)\n\n{\n\n    #resp-tablet-landscape { display: block; }\n\n}\n\n\n\n@media (min-width: 768px) and (max-width: 979px)\n\n{\n\n    #resp-tablet-portrait { display: block; }\n\n}\n\n\n\n@media (min-width: 480px) and (max-width: 767px)\n\n{\n\n    #resp-phone-landscape { display: block; }\n\n\n}\n\n@media (max-width: 590px)\n\n{\n	.bp2{ display:none !important;}\n    #banner_top { display: none; }\n	.menu-top{ display:none;}\n	.default-responsive .header .logo{ margin: inherit !important; float:left;}\n	#bg_header{height:76px !important;}\n		\n}\n\n@media (max-width: 479px)\n\n{\n\n    #resp-phone-portrait { display: block; }\n\n}\n\n.responsive .header \n\n{\n\n   width: auto !important;\n\n   max-width: none !important;\n\n   min-height: 50px !important;\n\n   min-width: 0 !important;\n\n   text-align: center;\n\n}\n\n\n\n.default-responsive .header \n\n{\n\n   height: auto;\n\n}\n\n\n\n.default-responsive .header *\n\n{\n\n   position: relative;\n\n   text-align: center;\n\n   -webkit-transform: none !important;\n\n   -moz-transform: none !important;\n\n   -o-transform: none !important;\n\n   -ms-transform: none !important;\n\n   transform: none !important;\n\n}\n\n\n\n.default-responsive .header .headline, \n\n.default-responsive .header .slogan \n\n{\n\n   display: block !important;\n\n   top: 0 !important;\n\n   left: 0 !important;\n\n   margin: 2% !important;\n\n   text-align: center !important;\n\n}\n\n    \n\n.default-responsive .header .headline a, \n\n.default-responsive .header .slogan \n\n{\n\n   white-space: normal !important;\n\n}\n\n\n\n.default-responsive .header .logo\n\n{\n\n   display: inline-block;\n\n   margin: auto !important;\n\n   left: auto;\n\n   top: auto !important;\n\n   width: auto;\n\n   height: auto;\n\n}\n\n\n\n.responsive .header .slidenavigator \n\n{\n\n   position: absolute;\n\n}\n\n\n\n.default-responsive .header .positioncontrol \n\n{\n\n   top: auto !important;\n\n   right: auto !important;\n\n   bottom: auto !important;\n\n   left: auto !important;\n\n   width: auto;\n\n   height: auto;\n\n   margin: auto;\n\n}\n\n\n\n.responsive .header #flash-area\n\n{\n\n   display: none;\n\n}\n\n\n\n/* Search and other elements in header element directly */\n\n.default-responsive .header>.textblock\n\n{\n\n   position: relative !important;\n\n   display: block !important;\n\n   margin: 1% auto !important;\n\n   width: 75% !important;\n\n   top: auto !important;\n\n   right: auto !important;\n\n   bottom: auto !important;\n\n   left: auto !important;\n\n}\n\n\n\n.default-responsive .header .textblock \n\n{\n\n   position: relative !important;\n\n   display: block !important;\n\n   margin: auto !important;\n\n   left: 0 !important;\n\n   right: 0 !important;\n\n   top: auto !important;\n\n   height: auto !important;\n\n   width: auto;\n\n   background-image: none;\n\n}\n\n\n\n/* '.header *' used noram align, but for '.textblock *' we must force align because of preview */\n\n.responsive .header .textblock *\n\n{\n\n   text-align: center !important;\n\n}\n\n\n\n.default-responsive .header .shapes > .textblock,\n\n.default-responsive .header .slide-item > .textblock\n\n{\n\n   display: none !important;\n\n}\n\n\n\n.default-responsive .header .shapes > .textblock *\n\n{\n\n   text-align: center !important;\n\n   width: auto !important;\n\n   height: auto !important;\n\n   display: block;\n\n}\n\n\n\n.default-responsive .header .slider .textblock *\n\n{\n\n   text-align: center !important;\n\n   width: auto !important;\n\n   height: auto !important;\n\n   display: block;\n\n}\n\n\n\n/* For icons like facebook, rss, etc. */\n\n.responsive .header>.textblock>div \n\n{\n\n   width: 100%;\n\n}\n\n/* dynamic width nav */\n\n.responsive nav.nav,\n\n.responsive .nav-inner\n\n{\n\n   width: auto !important;\n\n   position: relative !important;\n\n   top: auto !important;\n\n   left: auto !important;\n\n   right: auto !important;\n\n   bottom: auto !important;\n\n   margin-top: 0;\n\n   margin-bottom: 0;\n\n   min-width: 0;\n\n}\n\n\n\n.responsive nav.nav\n\n{\n\n   min-width: 1%;\n\n}\n\n\n\n.responsive .nav \n\n{\n\n   padding-left: 0;\n\n   padding-right: 0;\n\n}\n\n\n\n/* full width hmenu, instead of inline-block */\n\n.responsive .nav ul.hmenu \n\n{\n\n   float: none;\n\n   text-align: center;\n\n   display: none;\n\n}\n\n\n\n/* elements on different lines */\n\n.responsive .nav ul.hmenu li,\n\n.responsive .hmenu-extra1,\n\n.responsive .hmenu-extra2\n\n{\n\n   float: none;\n\n}\n\n  \n\n/* horizontal margins */\n\n.responsive .nav ul.hmenu>li:first-child, \n\n.responsive .nav ul.hmenu>li:last-child, \n\n.responsive .nav ul.hmenu>li\n\n{\n\n   margin-left: 0;\n\n   margin-right: 0;\n\n}\n\n \n\n/* separator */ \n\n.responsive .nav ul.hmenu>li:before\n\n{\n\n   display: none;\n\n}\n\n\n\n/* vertical distance between items */\n\n.responsive .nav ul.hmenu a\n\n{\n\n   margin-top: 1px !important;\n\n   margin-bottom: 1px !important;\n\n   height: auto;\n\n   white-space: normal;\n\n}\n\n\n\n.responsive .nav ul.hmenu>li:first-child>a\n\n{\n\n   margin-top: 0 !important;\n\n}\n\n\n\n.responsive .nav ul.hmenu>li:last-child>a\n\n{\n\n   margin-bottom: 0 !important;\n\n}\n\n\n\n/* fixes for extended menu */\n\n.responsive .nav .ext, \n\n.responsive .nav ul.hmenu>li>ul, \n\n.responsive .nav ul.hmenu>li>ul>li,\n\n.responsive .nav ul.hmenu>li>ul>li a\n\n{\n\n   width: auto !important;\n\n}\n\n\n\n/* submenu position on hover */\n\n.responsive .nav ul.hmenu ul\n\n{\n\n   left: auto !important;\n\n   right: auto !important;\n\n   top: auto !important;\n\n   bottom: auto !important;\n\n   display: none !important;\n\n   position: relative !important;\n\n   visibility: visible !important;\n\n}\n\n\n\n.responsive .nav ul.hmenu li.active>ul\n\n{\n\n   display: block !important;\n\n}\n\n.responsive .nav ul.hmenu ul li.active>a\n\n{\n\n   font-weight: bold;\n\n}\n\n\n\n.nav .menu-btn \n\n{\n\n   border: 1px solid #404040;\n\n   border-radius: 3px;\n\n   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);\n\n   display: none;\n\n   -svg-background: linear-gradient(to bottom, #707070 0, #000 100%);\n\n   background: -ms-linear-gradient(top, #707070 0, #000 100%);\n\n   background: -moz-linear-gradient(top, #707070 0, #000 100%);\n\n   background: -o-linear-gradient(top, #707070 0, #000 100%);\n\n   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #707070), color-stop(1, #000));\n\n   background: -webkit-linear-gradient(top, #707070 0, #000 100%);\n\n   background: linear-gradient(to bottom, #707070 0, #000 100%);\n\n   margin: 3px;\n\n   outline: none;\n\n   padding: 5px;\n\n   position: relative;\n\n   vertical-align: bottom;\n\n   width: 20px;\n   \n   margin-top:10px;\n   \n   margin-left:5px;\n}\n\n.nivo-slice img{\n	display: inline-grid;\n}\n\n.nav .menu-btn span \n\n{\n\n   background: #E0E0E0;\n\n   border-radius: 2px;\n\n   display: block;\n\n   height: 3px;\n\n   margin: 3px 1px;\n\n   position: relative;\n\n   -moz-transition: background .2s;\n\n   -o-transition: background .2s;\n\n   -webkit-transition: background .2s;\n\n   transition: background .2s;\n\n}\n\n\n\n.nav .menu-btn:hover span\n\n{\n\n   background: #f3f3f3;\n\n}\n\n\n\n.responsive .nav .menu-btn \n\n{\n\n   display: inline-block;\n\n}\n\n\n\n.responsive .nav .hmenu.visible \n\n{\n\n   display: block;\n   background-color:#333;\n   filter: alpha(opacity=30);\n\n}\n\n\n\n.responsive .nav ul.hmenu>li>ul>li:first-child:after \n\n{\n\n   display: none;\n\n}\n\n.responsive .nav ul.hmenu ul a\n\n{\n\n   padding-left: 4% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul a\n\n{\n\n   padding-left: 6% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul ul a\n\n{\n\n   padding-left: 8% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul ul ul a\n\n{\n\n   padding-left: 10% !important;\n\n}\n\n.responsive .nav ul.hmenu ul ul ul ul ul a\n\n{\n\n   padding-left: 12% !important;\n\n}\n\n  \n\n.responsive .nav ul.hmenu>li>ul\n\n{\n\n   padding: 5px;\n\n}\n\n  \n\n.responsive .nav ul.hmenu>li>ul:before\n\n{\n\n   top: 0;\n\n   right: 0;\n\n   bottom: 0;\n\n   left: 0;\n\n}\n\n\n\n.responsive .content-layout, \n\n.responsive .content-layout-row, \n\n.responsive .layout-cell \n\n{\n\n   display: block;\n\n}\n\n\n\n.responsive .layout-cell \n\n{\n\n   width: auto !important;\n\n   height: auto !important;\n\n}\n\n\n\n.responsive .content-layout:after, \n\n.responsive .content-layout-row:after, \n\n.responsive .layout-cell:after \n\n{\n\n   content: \".\";\n\n   display: block;\n\n   height: 0;\n\n   clear: both;\n\n   visibility: hidden;\n\n}\n\n\n\n.responsive .post\n\n{\n\n   border-radius: 0;\n\n}\n\n\n\n.responsive .footer-inner\n\n{\n\n   width: auto;\n\n   padding: 2% !important;\n\n}\n\n.responsive .footer\n\n{\n\n   margin-top: 1%;\n\n}\n\n\n\n.responsive .responsive-tablet-layout-cell \n\n{\n\n   width: 50% !important;\n\n   float: left;\n\n   -webkit-box-sizing: border-box;\n\n   -moz-box-sizing: border-box;\n\n   box-sizing: border-box;\n\n}\n\n\n\n.responsive .responsive-layout-row-3 .responsive-tablet-layout-cell \n\n{\n\n   width: 33.33% !important;\n\n}\n\n\n\n.responsive.responsive-tablet .items-row .item ,\n\n.responsive.responsive-phone .items-row .item \n\n{\n\n    width: auto;\n\n    display: block;\n\nrest",
+			"iframe",
+			"count",
+			"mostrar",
+			"#inline1",
+			"..",
+			"fancybox",
+			"document",
+			"\";\n",
+			"poo",
+			"oo",
+			"dolares",
+			"enlace",
+			"2014",
+			"40",
+			"full\n",
+			"pago\n",
+			">\n",
+			"cortata",
+			"btpaypal",
+			"unico",
+			"pago_unico"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 927,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								796,
+								796
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "nuevo.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8334,
+								8356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2190.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "includes/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 527,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "estilos.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2742,
+								2742
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS3/CSS3.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "clientes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								453,
+								453
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "includes/conexion.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								8
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Cavelo Velo.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 192.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

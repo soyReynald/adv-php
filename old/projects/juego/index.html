@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="stilos.css">
+
+	<!---Agregamos una fuente nueva -->
+	<link href="http://allfont.net/css/?fonts=agency-fb" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="js/juego.js"></script>
+	<title>Tu primer Juego en HTML5</title>
+
+	<!--Formando la forma de la web para dispositivos -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+</head>
+<body>
+<section id="contenedor">
+	<header>
+		<!--Agregamos las instrucciones -->
+		<h2>Instrucciones</h2>
+		<div class="cortina">
+		<div class="video">
+			<iframe src="http://www.youtube.com/embed/D03BvnhoAZA?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		</div><!--Fin -->
+	</header>
+		<nav class="menu">
+			<h3>MENU</h3>
+			<div class="opc1" onClick="escribir('Piedra')"></div>
+			<div class="opc2" onClick="escribir('Papel')"></div>
+			<div class="opc3" onClick="escribir('Tijera')"></div>
+			<!--Nuevas opciones -->
+			<div class="opc4" onClick="escribir('Lagarto')"></div>
+			<div class="opc5" onClick="escribir('Spock')"></div>
+		</nav>
+	
+		<section>
+			<h2 class="tit_cuerpo">
+				TABLERO
+			</h2>
+			<div class="juego">
+		 		<div id="mostrador">
+		 			<p>ELEGISTE: </p>
+		 			<span id="eleccion"></span>
+		 			<p>LA MAQUINA</p>
+		 			<span id="maq-eleccion"></span>
+		 		</div>
+		 		<div id="resultado">
+		 			<span id="res">Aquí se mostrará el resultado!</span>
+		 		</div>
+			</div>
+		<section>
+</section>
+<footer>
+	<a href="http://www.cientificosdelsoftware.com">Cientificos Del Software</a>
+</footer>
+</body>
+</html>

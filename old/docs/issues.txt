@@ -4,5 +4,3 @@
 - - Developing a project with PHP (Scracth with Perl knowledge to increase performance)
 - - DB Structure:
 - User, Editor, Questions, Answers, Bible, Audience
-
---> CMS Deadline: 14/10/2019 <-> 25/10/2019
