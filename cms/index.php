@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical CMS</title>
+    <title>Cientificos del software</title>
 </head>
 <body>
     <div class="container">
@@ -11,7 +11,7 @@
             $server = "localhost";
             $user = "root";
             $password = "";
-            $db = "facturacion";
+            $db = "cientificos_software";
 
             $connection = mysqli_connect($server, $user, $password, $db);
 
