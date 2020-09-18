@@ -36,7 +36,16 @@
         Escribir MSG
     Fin
     */
-
+    function calc_incentivo($pl, $pma, $pmi, $pj, $pv){
+        $pt = $pl + $pma + $pmi +$pj + $pv;
+        $pp = $pt / 5;
+        if($pp >= 100){
+            $msg = "Recibir&aacute; incentivos";
+        }else{
+            $msg = "No recibir&aacute; incentivos";
+        }
+        echo $msg;
+    }
     ?>
     <div class="ex">
         <h1>Algoritmo 1</h1>
@@ -67,8 +76,20 @@
             <input type="text" name="pv"  class="form-control">
         </div>
         <div class="form-group">
-            <button type="submit" name="submit">Calcular</button>
+            <input type="submit" name="submit" value="Calcular">
         </div>
     </form>
+    <?php
+        /*
+        Option 1
+        if(@$_POST['submit']){
+            calc_incentivo($_POST['pl'], $_POST['pma'], $_POST['pmi'], $_POST['pj'], $_POST['pv']);
+        }*/
+
+        if(isset($_POST['submit'])){
+            calc_incentivo($_POST['pl'], $_POST['pma'], $_POST['pmi'], $_POST['pj'], $_POST['pv']);
+        }
+        
+    ?>
 </body>
 </html>

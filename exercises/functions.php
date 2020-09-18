@@ -15,10 +15,10 @@
             }
         }
 
-        echo toUpper("Practicando PHP en Aldereca", false);
+        echo toUpper("Practicando PHP 7", false);
 
         print("<br />");
-        function increase(&$value){ 
+        function increase(&$value){
             $value++;
             return $value; 
         }
