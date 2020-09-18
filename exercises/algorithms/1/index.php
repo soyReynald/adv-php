@@ -15,6 +15,18 @@
     </div>
     <?php  
     /*
+    Entrada
+        Produccion del dia Lunes (PL)
+        Produccion del dia Martes (PMa)
+        Produccion del dia Miercoles (PMi)
+        Produccion del dia Jueves (PJ)
+        Produccion del dia Viernes (PV)
+    Intermedio
+        Produccion Total (PT)
+        Produccion Promedia (PP)
+    Salida
+        Mensaje (MSG)
+
     Inicio
         Leer PL
         Leer PMa
