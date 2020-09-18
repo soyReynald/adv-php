@@ -6,14 +6,7 @@
     <title>Incentivos de operario</title>
 </head>
 <body>
-    <div class="ex">
-        <h1>Algoritmo 1</h1>
-        <p>Se tiene registrado la producción (unidades) logradas por un operario a 
-        lo largo de la semana (lunes a viernes). Elabore un algoritmo que nos
-        muestre o nos diga si el operario recibirá incentivos sabiendo que el 
-        promedio de producción mínima es de 100 unidades.</p>
-    </div>
-    <?php  
+<?php  
     /*
     Entrada
         Produccion del dia Lunes (PL)
@@ -43,6 +36,39 @@
         Escribir MSG
     Fin
     */
+
     ?>
+    <div class="ex">
+        <h1>Algoritmo 1</h1>
+        <p>Se tiene registrado la producción (unidades) logradas por un operario a 
+        lo largo de la semana (lunes a viernes). Elabore un algoritmo que nos
+        muestre o nos diga si el operario recibirá incentivos sabiendo que el 
+        promedio de producción mínima es de 100 unidades.</p>
+    </div>
+    <form action="index.php" method="POST">
+        <div class="form-group">
+            <label for="">Produccion d&iacute;a Lunes</label>
+            <input type="text" name="pl" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Produccion d&iacute;a Martes</label>
+            <input type="text" name="pma" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Produccion d&iacute;a Miercoles</label>
+            <input type="text" name="pmi" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Produccion d&iacute;a Jueves</label>
+            <input type="text" name="pj" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Produccion d&iacute;a Viernes</label>
+            <input type="text" name="pv"  class="form-control">
+        </div>
+        <div class="form-group">
+            <button type="submit" name="submit">Calcular</button>
+        </div>
+    </form>
 </body>
 </html>
