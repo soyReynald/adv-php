@@ -37,7 +37,7 @@
     Fin
     */
     function calc_incentivo($pl, $pma, $pmi, $pj, $pv){
-        $pt = $pl + $pma + $pmi +$pj + $pv;
+        $pt = $_POST[$pl] + $_POST[$pma] + $_POST[$pmi] + $_POST[$pj] + $_POST[$pv];
         $pp = $pt / 5;
         if($pp >= 100){
             $msg = "Recibir&aacute; incentivos";
@@ -83,11 +83,11 @@
         /*
         Option 1
         if(@$_POST['submit']){
-            calc_incentivo($_POST['pl'], $_POST['pma'], $_POST['pmi'], $_POST['pj'], $_POST['pv']);
+            calc_incentivo('pl', 'pma', 'pmi', 'pj', 'pv');
         }*/
 
         if(isset($_POST['submit'])){
-            calc_incentivo($_POST['pl'], $_POST['pma'], $_POST['pmi'], $_POST['pj'], $_POST['pv']);
+            calc_incentivo('pl', 'pma', 'pmi', 'pj', 'pv');
         }
         
     ?>
