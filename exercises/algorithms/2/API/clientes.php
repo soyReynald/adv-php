@@ -1,4 +1,4 @@
-<?php require_once('../conexion.php'); ?>
+<?php require_once('conexion.php'); ?>
  <?php   
     if(isset($_GET["usuario"]) && $_GET['usuario'] == "soyReynald"){
         $query = "SELECT * FROM cliente";
@@ -8,8 +8,8 @@
 
         while( $mostrar = mysqli_fetch_array($result) ){
             array_push($arreglo, $mostrar);
-            echo( json_encode($arreglo) );
         }
+        echo( json_encode($arreglo) );
     }
 ?>
-<?php require_once('../desconectar.php'); ?>
+<?php require_once('desconectar.php'); ?>
