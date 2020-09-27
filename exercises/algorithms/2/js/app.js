@@ -45,5 +45,7 @@ function leer(user){
     /*** Error: Uncaught SyntaxError: Unexpected end of JSON input
      * at JSON.parse (<anonymous>) at XMLHttpRequest.request.onload
      * 
+     * 
+     * The answer is in ajax-simple repository
      */
 }
