@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-09-2020 a las 06:10:03
+-- Tiempo de generación: 27-09-2020 a las 17:08:44
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.2.33
 
@@ -29,11 +29,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cliente` (
   `codCliente` int(11) NOT NULL,
-  `nit` int(11) NOT NULL,
+  `nit` varchar(11) NOT NULL,
   `nombre` varchar(60) NOT NULL,
-  `telefono` int(40) NOT NULL,
-  `direccion` int(11) NOT NULL
+  `telefono` varchar(20) NOT NULL,
+  `direccion` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `cliente`
+--
+
+INSERT INTO `cliente` (`codCliente`, `nit`, `nombre`, `telefono`, `direccion`) VALUES
+(22123, '113388543', 'Reynald Rodriguez', '+1809-235-5666', 'Residencial Madrigal, Apto. B-1, Arroyo Hondo 2do, Santo Domingo, República Dominicana'),
+(22125, '40225355516', 'Manuel Rodriguez', '8092355666', 'Higuey, República Dominicana');
 
 -- --------------------------------------------------------
 
@@ -49,6 +57,13 @@ CREATE TABLE `detallefactura` (
   `precioTotal` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `detallefactura`
+--
+
+INSERT INTO `detallefactura` (`id`, `noFactura`, `codProducto`, `cantidadPedida`, `precioTotal`) VALUES
+(1, 1, 2321, 3, '7200');
+
 -- --------------------------------------------------------
 
 --
@@ -61,6 +76,13 @@ CREATE TABLE `factura` (
   `codCliente` int(11) NOT NULL,
   `totalFactura` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `factura`
+--
+
+INSERT INTO `factura` (`noFactura`, `fecha`, `codCliente`, `totalFactura`) VALUES
+(1, '2020-09-03 19:02:24', 22123, '7250');
 
 -- --------------------------------------------------------
 
@@ -77,6 +99,13 @@ CREATE TABLE `producto` (
   `foto` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`codProducto`, `descripcion`, `proveedor`, `precioCosto`, `precioVenta`, `foto`) VALUES
+(2321, 'Claro TV', 20, '2000', '2200', 'img/claroTV.png');
+
 -- --------------------------------------------------------
 
 --
@@ -86,9 +115,16 @@ CREATE TABLE `producto` (
 CREATE TABLE `proveedor` (
   `codProveedor` int(11) NOT NULL,
   `proveedor` varchar(30) NOT NULL,
-  `telefono` int(60) NOT NULL,
+  `telefono` varchar(20) NOT NULL,
   `direccion` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `proveedor`
+--
+
+INSERT INTO `proveedor` (`codProveedor`, `proveedor`, `telefono`, `direccion`) VALUES
+(20, 'Claro', '8092201111', 'Autopista Las Americas #68, esquina Argentina., Santo Domingo 15700');
 
 --
 -- Índices para tablas volcadas
@@ -136,13 +172,36 @@ ALTER TABLE `proveedor`
 -- AUTO_INCREMENT de la tabla `detallefactura`
 --
 ALTER TABLE `detallefactura`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `factura`
 --
 ALTER TABLE `factura`
-  MODIFY `noFactura` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `noFactura` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `detallefactura`
+--
+ALTER TABLE `detallefactura`
+  ADD CONSTRAINT `detalle-factura` FOREIGN KEY (`noFactura`) REFERENCES `factura` (`noFactura`),
+  ADD CONSTRAINT `detalle-producto` FOREIGN KEY (`codProducto`) REFERENCES `producto` (`codProducto`);
+
+--
+-- Filtros para la tabla `factura`
+--
+ALTER TABLE `factura`
+  ADD CONSTRAINT `factura-cliente` FOREIGN KEY (`codCliente`) REFERENCES `cliente` (`codCliente`);
+
+--
+-- Filtros para la tabla `producto`
+--
+ALTER TABLE `producto`
+  ADD CONSTRAINT `proveedor-producto` FOREIGN KEY (`proveedor`) REFERENCES `proveedor` (`codProveedor`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
