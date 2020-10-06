@@ -6,7 +6,7 @@
     $year = date('Y');
     $monthDays = cal_days_in_month(CAL_GREGORIAN, $month, $year);
     $date = strtotime($year . '-' . $month . '-01');
-    $firsWeekDay = date('w', $date);
+    $firstWeekDay = date('w', $date);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@
 <body>
     <table class="table table-striped">
         <tr>
-            <th colspan="7">Calendar</th>
+            <th colspan="7"><?php echo date('M Y', $date); ?></th>
         </tr>
         <tr>
             <th>Sun</th>
@@ -29,6 +29,30 @@
             <th>Thu</th>
             <th>Fri</th>
             <th>Sat</th>
+        </tr>
+        <tr>
+            <?php
+                # Empty spaces
+                for($e = 1; $e <= $firstWeekDay; $e++){
+                    echo "<td></td>";
+                }
+                $dayCount = $firstWeekDay;
+                # Calendar days
+                for($d = 1; $d <= $monthDays; $d++){
+                    // Days off condition
+                    $class = '';
+                    if($dayCount == 0 || $dayCount == 6){
+                        $class = ' class="text-danger"';
+                    }
+                    echo "<td $class>$d</td>";
+                    if($dayCount == 6){
+                    echo "</tr>";
+                    $dayCount = 0;
+                    }else{
+                        $dayCount++;
+                    }
+                }
+            ?>
         </tr>
     </table>
 </body>
