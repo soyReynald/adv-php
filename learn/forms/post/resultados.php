@@ -1,10 +1,9 @@
 <?php
-	if(!$_POST[])
-	if(isset($_POST['nombre']) || trim($_POST['nombre']) == ""){
+	if(!isset($_POST['nombre']) || trim($_POST['nombre']) == ""){
 		header("Location: index.php");
 	}
 	
-	if(isset($_POST['pais']) || trim($_POST['pais']) == ""){
+	if(!isset($_POST['pais']) || trim($_POST['pais']) == ""){
 		header("Location: index.php");
 	}
 

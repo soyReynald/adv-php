@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Variable $_POST</title>
-	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 	<div style="margin-top: 20px" class="container">
@@ -24,10 +24,10 @@
 				<label for="sexo">Sexo:</label>
 				<div class="row">
 					<div class="col-6">
-						<label><input type="radio" name="sexo"> Masculino</label>
+						<label><input type="radio" name="sexo" value="Masculino"> Masculino</label>
 					</div>
 					<div class="col-6">
-						<label><input type="radio" name="sexo"> Femenino</label>
+						<label><input type="radio" name="sexo" value="Femenino"> Femenino</label>
 					</div>
 				</div>
 			</div>
