@@ -1,5 +1,4 @@
 <?php
-
 $detalles = [
 			 array("nombre"=>"Manzana", "precio"=>45.95, "color"=>"Rojo"),
 			 array("nombre"=>"Pera", "precio"=>40.36, "color"=>"Verde"),
@@ -8,6 +7,9 @@ $detalles = [
 			 array("nombre"=>"Mango", "precio"=>10.80, "color"=>"Amarillo")
 			 ];
 
+			if(!isset($_GET['producto'])){
+				header('Location: index.php');
+			}
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +24,7 @@ $detalles = [
 				<td colspan="2">Detalles del producto</td>
 			</tr>
 			<?php foreach($detalles as $producto): 
-					if($producto["nombre"] == $_GET['product']): ?>
+					if($producto["nombre"] == $_GET['producto']): ?>
 			<tr>
 				<td>Nombre:</td>
 				<td>{ <?php echo $producto["nombre"]; ?> }</td>
@@ -35,7 +37,7 @@ $detalles = [
 				<td>Color:</td>
 				<td>{ <?php echo $producto["color"]; ?> }</td>
 			</tr>
-			<?php endif; 
+			<?php endif;
 				endforeach; ?>
 		</table>
 	</div>

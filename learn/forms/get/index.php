@@ -20,7 +20,7 @@ $productos = ["Manzana", "Pera", "Uva", "Naranja", "Mango"];
 
 			<tr>
 				<td>{ <?php echo $producto; ?> }</td>
-				<td><a href="detalles.php?product=<?php echo $producto; ?>" class="btn btn-sm btn-dark"> Detalles </a></td>
+				<td><a href="detalles.php?producto=<?php echo $producto; ?>" class="btn btn-sm btn-dark"> Detalles </a></td>
 			</tr>
 
 			<?php endforeach; ?>
