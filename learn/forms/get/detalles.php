@@ -1,4 +1,5 @@
 <?php
+$producto = $_GET["producto"];
 $detalles = [
 			 array("nombre"=>"Manzana", "precio"=>45.95, "color"=>"Rojo"),
 			 array("nombre"=>"Pera", "precio"=>40.36, "color"=>"Verde"),
@@ -13,7 +14,7 @@ $detalles = [
 					$detalle = $producto;
 				}
 			}
-			if(!isset($_GET['producto']) || $detalle == null){
+			if(!isset($producto) || $detalle == null){
 				header('Location: index.php');
 			}
 ?>
