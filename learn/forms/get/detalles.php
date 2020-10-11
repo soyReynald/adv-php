@@ -7,7 +7,13 @@ $detalles = [
 			 array("nombre"=>"Mango", "precio"=>10.80, "color"=>"Amarillo")
 			 ];
 
-			if(!isset($_GET['producto'])){
+			$detalle = null;
+			foreach($detalles as $producto){
+				if($producto["nombre"] == $_GET['producto']){
+					$detalle = $producto;
+				}
+			}
+			if(!isset($_GET['producto']) || $detalle == null){
 				header('Location: index.php');
 			}
 ?>
@@ -23,22 +29,19 @@ $detalles = [
 			<tr>
 				<td colspan="2">Detalles del producto</td>
 			</tr>
-			<?php foreach($detalles as $producto): 
-					if($producto["nombre"] == $_GET['producto']): ?>
 			<tr>
 				<td>Nombre:</td>
-				<td>{ <?php echo $producto["nombre"]; ?> }</td>
+				<td> <?php echo $detalle["nombre"]; ?></td>
 			</tr>
 			<tr>
 				<td>Precio:</td>
-				<td>{ <?php echo $producto["precio"]; ?> }</td>
+				<td>{ <?php echo $detalle["precio"]; ?> }</td>
 			</tr>
 			<tr>
 				<td>Color:</td>
-				<td>{ <?php echo $producto["color"]; ?> }</td>
+				<td>{ <?php echo $detalle["color"]; ?> }</td>
 			</tr>
-			<?php endif;
-				endforeach; ?>
+			
 		</table>
 	</div>
 </body>
