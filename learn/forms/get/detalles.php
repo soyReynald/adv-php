@@ -22,7 +22,7 @@ $detalles = [
 				<td colspan="2">Detalles del producto</td>
 			</tr>
 			<?php foreach($detalles as $producto): 
-					if($producto["nombre"] == $_GET['producto']): ?>
+					if($producto["nombre"] == $_GET['product']): ?>
 			<tr>
 				<td>Nombre:</td>
 				<td>{ <?php echo $producto["nombre"]; ?> }</td>
