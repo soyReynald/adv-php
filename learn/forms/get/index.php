@@ -7,7 +7,7 @@ $productos = ["Manzana", "Pera", "Uva", "Naranja", "Mango"];
 <html>
 <head>
 	<title>Variable $_GET</title>
-	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 	<div style="margin-top:  20px" class="container">
@@ -19,8 +19,8 @@ $productos = ["Manzana", "Pera", "Uva", "Naranja", "Mango"];
 			<?php foreach($productos as $producto): ?>
 
 			<tr>
-				<td>{ <?php $producto; ?>}</td>
-				<td><a href="detalles.php" class="btn btn-sm btn-dark"> Detalles </a></td>
+				<td>{ <?php echo $producto; ?> }</td>
+				<td><a href="detalles.php?product=<?php echo $producto; ?>'" class="btn btn-sm btn-dark"> Detalles </a></td>
 			</tr>
 
 			<?php endforeach; ?>

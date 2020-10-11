@@ -25,15 +25,15 @@ $detalles = [
 					if($producto["nombre"] == $_GET['producto']): ?>
 			<tr>
 				<td>Nombre:</td>
-				<td>{ <?php $producto["nombre"]; ?> }</td>
+				<td>{ <?php echo $producto["nombre"]; ?> }</td>
 			</tr>
 			<tr>
 				<td>Precio:</td>
-				<td>{ <?php $producto["precio"]; ?> }</td>
+				<td>{ <?php echo $producto["precio"]; ?> }</td>
 			</tr>
 			<tr>
 				<td>Color:</td>
-				<td>{ <?php $producto["color"]; ?> }</td>
+				<td>{ <?php echo $producto["color"]; ?> }</td>
 			</tr>
 			<?php endif; 
 				endforeach; ?>
