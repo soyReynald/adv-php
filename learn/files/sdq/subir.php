@@ -17,7 +17,7 @@ if(isset($_FILES) && is_uploaded_file($_FILES['archivo']['tmp_name'])){
         $destination;
         switch($type[1]){
             case 'gif':
-            case 'jpeg':
+            case 'jpg':
             case 'png':
                 if($size < 150){
                     $destination = 'img';
