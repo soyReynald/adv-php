@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<albumes>
+	<album nombre="Historias" artista="Ricardo Arjona" foto="historias.jpg" fecha="1994-04-19" genero="Jazz">
+		<descripcion>
+			Historias es el nombre del quinto álbum de estudio grabado por el cantautor guatemalteco Ricardo Arjona, Fue lanzado al mercado bajo el sello discográfico Sony Music México el 19 de abril de 1994.
+		</descripcion>
+		<canciones>
+			<cancion track="1" titulo="Sí yo fuera" duracion="4:29" />
+			<cancion track="2" titulo="Señora de las cuatro décadas" duracion="5:06" />
+			<cancion track="3" titulo="Casa de locos" duracion="2:59" />
+			<cancion track="4" titulo="Historia de taxi" duracion="6:45" />
+			<cancion track="5" titulo="La noche te trae sorpresas" duracion="4:11" />
+			<cancion track="6" titulo="Amor de tele" duracion="3:20" />
+			<cancion track="7" titulo="Te conozco" duracion="4:12" />
+			<cancion track="8" titulo="Historia del portero" duracion="5:12" />
+			<cancion track="9" titulo="Realmente no estoy tan solo" duracion="3:53" />
+			<cancion track="10" titulo="Del otro lado del sol" duracion="4:45" />
+			<cancion track="11" titulo="Me estan jodiendo la vida" duracion="4:30" />
+			<cancion track="12" titulo="Ayúdame Freud" duracion="6:43" />
+			<cancion track="13" titulo="Libre" duracion="3:31" />
+			<cancion track="14" titulo="Chicos de plastico" duracion="4:18" />
+		</canciones>	
+	</album>
+	<album nombre="Ni es lo mismo ni es igual" artista="Juan Luis Guerra" foto="juan_luis.jpg" fecha="1998-12-15" genero="Merengue">
+		<descripcion>
+			Ni es lo mismo ni es igual es el nombre del octavo álbum de estudio del cantautor y compositor dominicano Juan Luis Guerra. Fue lanzado al mercado por Karen Records el 15 de diciembre de 1998.
+		</descripcion>
+		<canciones>
+			<cancion track="1" titulo="Mi PC" duracion="3:17" />
+			<cancion track="2" titulo="Vale la pena" duracion="3:27" />
+			<cancion track="3" titulo="La hormiguita" duracion="3:03" />
+			<cancion track="4" titulo="Quisiera" duracion="3:50" />
+			<cancion track="5" titulo="El Niágara en bicicleta" duracion="4:25" />
+			<cancion track="6" titulo="Palomita blanca" duracion="3:43" />
+			<cancion track="7" titulo="Testimonio" duracion="4:18" />
+			<cancion track="8" titulo="El primo" duracion="3:48" />
+			<cancion track="9" titulo="Sobremesa" duracion="1:20" />
+			<cancion track="10" titulo="Amor de conuco" duracion="3:09" />
+		</canciones>
+	</album>
+	<album nombre="Tesoros" artista="José José" foto="tesoros.jpg" fecha="1997-11-04" genero="Balada">
+		<descripcion>
+			Tesoros es un álbum recopilatorio de José José, publicado en 1997 como parte de dos recopilatorios, que lanzaría con motivo de sus 35 años de trayectoria artística.
+		</descripcion>
+		<canciones>
+			<cancion track="1" titulo="Libre como antes" duracion="3:48" />
+			<cancion track="2" titulo="A un amigo" duracion="4:24" />
+			<cancion track="3" titulo="Mi testamento" duracion="3:22" />
+			<cancion track="4" titulo="No dudes mas" duracion="3:37" />
+			<cancion track="5" titulo="Hoy Te Esperare (Hoy Me Espera)" duracion="3:46" />
+			<cancion track="6" titulo="Aún estoy de pie" duracion="4:01" />
+			<cancion track="7" titulo="Vuelvo a sentir" duracion="2:39" />
+			<cancion track="8" titulo="El más feliz del mundo" duracion="4:26" />
+			<cancion track="9" titulo="Mientes" duracion="3:45" />
+			<cancion track="10" titulo="Madrecita" duracion="3:49" />
+			<cancion track="11" titulo="Caminante" duracion="3:19" />
+			<cancion track="12" titulo="He sido" duracion="2:19" />
+		</canciones>
+	</album>
+	<album nombre="Sueños líquidos" artista="Maná" foto="suenos_liquidos.jpg" fecha="1997-10-14" genero="Rock">
+		<descripcion>
+			Sueños líquidos es el nombre del quinto álbum de estudio grabado por la banda de rock mexicana Maná. Fue lanzado al mercado por el sello discográfico WEA Latina el 14 de octubre de 1997.
+		</descripcion>
+		<canciones>
+			<cancion track="1" titulo="Hechicera" duracion="5:00" />
+			<cancion track="2" titulo="Un lobo por tu amor" duracion="5:21" />
+			<cancion track="3" titulo="Como dueles en los labios" duracion="4:08" />
+			<cancion track="4" titulo="Chamán" duracion="5:12" />
+			<cancion track="5" titulo="Tú tienes lo que quiero" duracion="4:39" />
+			<cancion track="6" titulo="Clavado en un bar" duracion="5:13" />
+			<cancion track="7" titulo="Róbame el alma" duracion="4:04" />
+			<cancion track="8" titulo="En el muelle de San Blas" duracion="5:53" />
+			<cancion track="9" titulo="La sirena" duracion="5:29" />
+			<cancion track="10" titulo="Me voy a convertir en un ave" duracion="5:02" />
+			<cancion track="11" titulo="Como te extrañ corazón" duracion="5:11" />
+			<cancion track="12" titulo="Ámame hasta que me muera" duracion="5:28" />
+		</canciones>
+	</album>
+	<album nombre="Thriller" artista="Michael Jackson" foto="thriller.jpg" fecha="1982-11-30" genero="Pop">
+		<descripcion>
+			Thriller es el nombre del sexto álbum de estudio del artista estadounidense Michael Jackson. Fue lanzado al mercado el 30 de noviembre de 1982 por Epic Records después del exitoso y aclamado álbum de Jackson Off the Wall de 1979.
+		</descripcion>
+		<canciones>
+			<cancion track="1" titulo="Wanna be startin’ somethin’" duracion="6:03" />
+			<cancion track="2" titulo="Babe be mine" duracion="4:20" />
+			<cancion track="3" titulo="The girl is mine" duracion="3:42" />
+			<cancion track="4" titulo="Thriller" duracion="5:58" />
+			<cancion track="5" titulo="Beat it" duracion="4:18" />
+			<cancion track="6" titulo="Billie Jean" duracion="4:54" />
+			<cancion track="7" titulo="Human nature" duracion="4:06" />
+			<cancion track="8" titulo="P.Y.T. (Pretty young thing)" duracion="3:59" />
+			<cancion track="9" titulo="The lady in my life" duracion="4:59" />
+		</canciones>
+	</album>
+</albumes>
