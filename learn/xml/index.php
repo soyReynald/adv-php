@@ -19,8 +19,11 @@ $data = simplexml_load_file('data/canciones.xml');
 						<h5 class="card-title"><?php echo $album['artista']; ?></h5>
 						<p class="card-text">[<?php echo $album['fecha']; ?>] <?php echo $album['descripcion']; ?> </p>
 					</div>
-				 	<ul class="list-group list-group-flush">	 		
-					 <li class="list-group-item"><span class="float-right">{ duracion }</span>Track #{ track }: { titulo } </li>
+				 	<ul class="list-group list-group-flush">
+					 <!-- <?php echo "<pre>"; print_r($album->canciones); echo "</pre>"; ?> -->
+					 <?php foreach($album->canciones->cancion as $cancion): ?>	 		
+					 	<li class="list-group-item"><span class="float-right"><?php echo $cancion['duracion']; ?></span>Track # <?php echo $cancion['track']; ?>: <?php echo $cancion['titulo']; ?> </li>
+					 <?php endforeach; ?>
 				  	</ul>
 				</div>
 			</div>
