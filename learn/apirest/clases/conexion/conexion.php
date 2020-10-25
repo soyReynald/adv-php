@@ -50,6 +50,21 @@ class Conexion {
         }
         return $this->convert_utf8($resultArray);
     }
+
+    public function nonQuery($sql_str){
+        $result = $this->conexion->query($sql_str);
+        return $this->conexion->affected_row;
+    }
+
+    public function nonQueryId($sql_str){
+        $result = $this->conexion->query($sql_str);
+        $filas = $this->conexion->affected_row;
+        if($filas >= 1){
+            return $this->conexion->insert_id;
+        }else{
+            return 0;
+        }
+    }
 }
 
 ?>
