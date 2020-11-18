@@ -9,42 +9,22 @@
 	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
 </head>
 <body>
-	<h4>Mazda</h4>
+	<h4>Todas las marcas</h4>
 	<p>
-		En una tabla mostrar todos los modelos que la marca Mazda manufacturó entre el 2014 y 2016
+		Agregar los botones eliminar y editar a las Marcas
 	</p>
-	<table>
+	<table class="table">
 		<thead>
 			<tr>
-				
-				<td><b>A&ntilde;o</b></td>
-				<td><b>Nombre</b></td>
-				<td><b>Modelo</b></td>
+				<td scope="col"><b>Nombre</b></td>
 			</tr>
 		</thead>
 		<tbody>
-			<?php while($model = mysqli_fetch_assoc($mazda)): ?>
+			<?php while($mark = mysqli_fetch_assoc($marks)): ?>
 				<tr>
-					<td><?php echo $model['year'] ?></td>
-					<td><?php echo $model['name'] ?></td>
-					<td><?php echo $model['model'] ?></td>
-				</tr>
-			<?php endwhile; ?>
-		</tbody>
-	</table>
-	<h4>Modelos diferentes por marca entre los a&ntilde;os 2004-2006</h4>
-	<table>
-		<thead>
-			<tr>
-				<td><b>Nombre</b></td>
-				<td><b>A&ntilde;o</b></td>
-			</tr>
-		</thead>
-		<tbody>
-			<?php while($model = mysqli_fetch_assoc($years)): ?>
-				<tr>
-					<td><?php echo $model['name'] ?></td>
-					<td><?php echo $model['year'] ?></td>
+					<td><?php echo $mark['name'] ?></td>
+					<td><a href="editar.php?item=<?php echo $mark['id']; ?>&name=<?php echo $mark['name']; ?>&option=editar">Editar</a></td>
+					<td><a href="?item=<?php echo $mark['id']; ?>&option=eliminar">Eliminar</a></td>
 				</tr>
 			<?php endwhile; ?>
 		</tbody>
