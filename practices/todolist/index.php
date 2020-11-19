@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>To do list</h1>
-        <a href="add-task.php" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Guardar </a>
+        <a href="add-task.php" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Agregar </a>
     </div>
 </body>
 </html>
