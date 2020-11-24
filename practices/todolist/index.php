@@ -11,6 +11,20 @@
     <div class="container">
         <h1>To do list</h1>
         <a href="add-task.php" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Agregar </a>
+        <?php require_once('config/conexion.php'); ?>
+        <?php
+            $sql = "SELECT * FROM tasks";
+            $result = $con->query($sql);
+
+            if($result){
+                echo "Exito!";
+            }
+            
+            while($row = $result->fetch_assoc()){
+                echo "<h1>{$row['title']}</h1>";
+                echo "<p>{$row['task']}</p>";
+            }
+            ?>
     </div>
 </body>
 </html>
