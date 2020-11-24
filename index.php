@@ -125,6 +125,18 @@
         echo gettype($num1);
         // El lenguaje PHP es implicito por lo tanto, interpreta el tipo de una variable por su contenido sin que esta lo exprese de manera directa
     ?>
+
+<div class="code-block">
+    <span>Casting</span>
+    <pre>
+        $num3 = "3778.50";
+        echo number_format($num3);
+    </pre>
+    <?php 
+        $num3 = "3778.50";
+        echo number_format($num3, 2, '.', ',');
+        // El lenguaje PHP es implicito por lo tanto, interpreta el tipo de una variable por su contenido sin que esta lo exprese de manera directa
+    ?>
 </div>
 </body>
 </html>
