@@ -1,17 +1,15 @@
 <?php
     @$visita = $_COOKIE['visita'];
-    setcookie("visita", date('d/m/Y'), time()+31536000); // or date('d/m/Y | H:i:s')
-    setcookie("contador", 1, time()+4800);
+    setcookie("visita", date('d/m/Y'), time()+365*24*60*60); // or date('d/m/Y | H:i:s')
     if(@$visita){
         @$contador = $_COOKIE['contador']+1;
         echo "¡Que alegría verte de nuevo por aquí! <br/>";
         echo "Tu última visita fue el $visita <br/>";
-        setcookie("contador", $contador, time()+4800);
+        setcookie("contador", $contador, time()+365*24*60*60);
         echo "Nos has visitado unas $contador veces";
     }else{
         echo "¡Bienvenido a la web por primera vez!";
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
