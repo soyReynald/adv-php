@@ -15,16 +15,16 @@
         <?php
             $sql = "SELECT * FROM tasks";
             $result = $con->query($sql);
-
-            if($result){
-                echo "Exito!";
-            }
-            
-            while($row = $result->fetch_assoc()){
-                echo "<h1>{$row['title']}</h1>";
-                echo "<p>{$row['task']}</p>";
-            }
-            ?>
+            $row = "";
+            while($row = $result->fetch_assoc()): ?>
+            <div class="task_container border form-group">
+                <a href="edit_task.php?id=<?php echo $row['id']; ?>" class="btn btn-warning btn-xs pull-right"><i class="fa fa-edit"></i></a>
+                <a href="delete_task.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-xs pull-right"><i class="fa fa-trash"></i></a>
+                <h2><?php echo $row['title']; ?></h2>
+                <p><?php echo $row['task']; ?></p>
+            </div>
+            <?php endwhile; ?>
     </div>
+    <?php require_once('config/desconectar.php'); ?>
 </body>
 </html>
