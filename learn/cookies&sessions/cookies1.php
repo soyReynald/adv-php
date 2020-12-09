@@ -5,6 +5,14 @@
 if($nombre){
     echo "The cookie should have been created";
 }
+
+session_start();
+@$visited = $_SESSION['counter'];
+if(@$visited){
+    $_SESSION['counter'] += 1;
+}else{
+    $_SESSION['counter'] = 1;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,11 +29,19 @@ if($nombre){
         </div>
         <button class="btn btn-primary">Enviar</button>
     </form>
-    <?php 
-        if($_COOKIE){
-            echo "<span>Hay una cookie guardada y su valor es:  {$_COOKIE['usuario']} </span>"; 
+    <?php
+
+        if(@$_COOKIE['usuario']){
+            echo "<span>Hay una cookie guardada y su valor es:  {$_COOKIE['usuario']} </span>";
         }else{
             echo "No se encontraron cookies guardadas!";
+        }
+
+        if(isset($_SESSION['counter'])){
+            echo "<br/>Hay una sesion activa, que cuenta las visitas y su valor es: {$_SESSION['counter']}";
+        }
+        if($_SESSION['counter'] == 1){
+            echo "<br/>Es la primera vez que entras a esta web con esta sesion!";
         }
     ?>
 </body>
