@@ -1,7 +1,17 @@
 <?php
 
-$month = date('m');
-$year = date('Y');
+$pattern = "/[0-9]{2}-[0-9]{4}/";
+
+if(isset($_GET['month']) && preg_match($pattern, $_GET['month'])){
+    $monthArr = explode('-', $_GET['month']);
+    $month = $monthArr[0];
+    $year = $monthArr[1];
+}else{
+    $month = date('m');
+    $year = date('Y');
+}
+
+
 
 $firstDay = strtotime($year . '-'. $month . '-1');
 // Necesito estudiar strtotime()
@@ -67,7 +77,7 @@ $nextDay = 1;
             <div class="col-md-4">
                 <form action="index.php" method="get" class="form-group">
                     <div class="input-group">
-                        <input type="text" class="form-control datepicker">
+                        <input type="text" name="month" class="form-control datepicker">
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary btn-sm">
                                 <i class="icon-search"></i>
