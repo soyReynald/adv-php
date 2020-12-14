@@ -27,6 +27,10 @@ if($month == 12){
 }
 
 $prevMonthDays = cal_days_in_month(CAL_GREGORIAN, $prevMonth, $prevYear);
+$startWeekDay = $monthDays - $firstWeekDay + 1;
+$weekCount = 1;
+$dayCount = 1;
+$nextDay = 1;
 
 ?>
 <!DOCTYPE html>
@@ -73,7 +77,7 @@ $prevMonthDays = cal_days_in_month(CAL_GREGORIAN, $prevMonth, $prevYear);
                 </form>
             </div>
             <div class="col-md-8">
-                <h4 class="float-right">March 2020</h4>
+                <h4 class="float-right"><?php echo $monthName." ". $year; ?></h4>
             </div>
         </div>
 
@@ -88,31 +92,29 @@ $prevMonthDays = cal_days_in_month(CAL_GREGORIAN, $prevMonth, $prevYear);
                 <th>Sat</th>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td>1</td>
-                <td>2</td>
-                <td>
-                    <a href="#">3</a>
-                    <small>
-                        <span class="badge badge-dark float-right">2 events</span>
-                        <ul>
-                            <li><a href="#"><i class="icon-pencil"></i> Teaching</a></li>
-                            <li><a href="#"><i class="icon-cog"></i> Reparations</a></li>
-                        </ul>
-                    </small>
-                </td>
-                <td>4</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
+                <?php
+
+                    while($firstWeekDay > 0){
+                        echo '<td class="text-muted">' . $startWeekDay++ . '</td>';
+                        $firstWeekDay--;
+                        $weekCount++;
+                    }
+                    
+                    while($dayCount <= $monthDays){
+                        echo '<td>' . $dayCount++ . '</td>';
+                        $weekCount++;
+
+                        if($weekCount > 7){
+                            echo '</tr><tr>';
+                            $weekCount = 1;
+                        }
+                    }
+
+                    while($weekCount > 1 && $weekCount <= 7){
+                        echo '<td class="text-muted">' . $nextDay++ . '</td>';
+                        $weekCount++;
+                    }
+                ?>
             </tr>
         </table>
 
