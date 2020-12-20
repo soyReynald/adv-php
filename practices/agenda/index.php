@@ -147,7 +147,24 @@ $nextDay = 1;
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" name="date" class="form-control" placeholder="Date">
+                    </div>
+                    <div class="form-group">
+                        <input type="time" name="time" class="form-control" placeholder="Time">
+                    </div>
+                    <div class="form-group">
+                        Category
+                        <select name="category" class="form-control" id="">
+                            <option value="1">Education</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Event Name">
+                    </div>
+                    
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
