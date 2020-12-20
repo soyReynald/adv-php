@@ -58,6 +58,7 @@ $nextDay = 1;
     </style>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script>
         $(function(){
 
@@ -66,6 +67,11 @@ $nextDay = 1;
                 startView: 1,
                 minViewMode: 1
             });
+
+            $('.btn-dark').on('click', function(){
+                //alert($(this).data('date'));
+                $("#modal").modal();
+            })
 
         });
     </script>
@@ -112,7 +118,7 @@ $nextDay = 1;
                     }
                     
                     while($dayCount <= $monthDays){
-                        echo '<td>' . $dayCount++ . '</td>';
+                        echo '<td><button data-date="'.$year.'-'.$month.'-'.$dayCount.'" class="btn btn-sm btn-dark">' . $dayCount++ . '</button></td>';
                         $weekCount++;
 
                         if($weekCount > 7){
@@ -128,7 +134,27 @@ $nextDay = 1;
                 ?>
             </tr>
         </table>
+    </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="icon-calendar"></i> Add New Event</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
