@@ -1,7 +1,17 @@
 <?php
 
-$month = date('m');
-$year = date('Y');
+$pattern = "/[0-9]{2}-[0-9]{4}/";
+
+if(isset($_GET['month']) && preg_match($pattern, $_GET['month'])){
+    $monthArr = explode('-', $_GET['month']);
+    $month = $monthArr[0];
+    $year = $monthArr[1];
+}else{
+    $month = date('m');
+    $year = date('Y');
+}
+
+
 
 $firstDay = strtotime($year . '-'. $month . '-1');
 // Necesito estudiar strtotime()
@@ -68,7 +78,7 @@ $nextDay = 1;
             <div class="col-md-4">
                 <form action="index.php" method="get" class="form-group">
                     <div class="input-group">
-                        <input type="text" class="form-control datepicker">
+                        <input type="text" name="month" class="form-control datepicker">
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary btn-sm">
                                 <i class="icon-search"></i>
@@ -78,7 +88,7 @@ $nextDay = 1;
                 </form>
             </div>
             <div class="col-md-8">
-                <h4 class="float-right">March 2020</h4>
+                <h4 class="float-right"><?php echo $monthName." ". $year; ?></h4>
             </div>
         </div>
 
@@ -93,15 +103,27 @@ $nextDay = 1;
                 <th>Sat</th>
             </tr>
             <tr>
-                <?php 
+                <?php
+
                     while($firstWeekDay > 0){
-                        echo '<td>' . $startWeekDay++ . '</td>';
-                        $firstDay--;
+                        echo '<td class="text-muted">' . $startWeekDay++ . '</td>';
+                        $firstWeekDay--;
                         $weekCount++;
                     }
-
+                    
                     while($dayCount <= $monthDays){
-                        
+                        echo '<td>' . $dayCount++ . '</td>';
+                        $weekCount++;
+
+                        if($weekCount > 7){
+                            echo '</tr><tr>';
+                            $weekCount = 1;
+                        }
+                    }
+
+                    while($weekCount > 1 && $weekCount <= 7){
+                        echo '<td class="text-muted">' . $nextDay++ . '</td>';
+                        $weekCount++;
                     }
                 ?>
             </tr>
