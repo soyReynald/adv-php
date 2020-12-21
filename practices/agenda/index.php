@@ -1,5 +1,14 @@
 <?php
 
+require 'config/mysqli.php';
+
+$sql = "SELECT * FROM categories";
+$categories = array();
+$query = $con->query($sql);
+while($row = $query->fetch_object()){
+    $categories[]= $row;
+}
+
 $pattern = "/[0-9]{2}-[0-9]{4}/";
 
 if(isset($_GET['month']) && preg_match($pattern, $_GET['month'])){
@@ -69,7 +78,7 @@ $nextDay = 1;
             });
 
             $('.btn-dark').on('click', function(){
-                //alert($(this).data('date'));
+                $(".input-date").val($(this).data('date'));
                 $("#modal").modal();
             })
 
@@ -149,16 +158,22 @@ $nextDay = 1;
             <div class="modal-body">
                 <form action="">
                     <div class="form-group">
-                        <input type="text" name="date" class="form-control" placeholder="Date">
+                        <input type="text" name="date" class="form-control input-date" placeholder="Date">
                     </div>
                     <div class="form-group">
                         <input type="time" name="time" class="form-control" placeholder="Time">
                     </div>
                     <div class="form-group">
                         Category
+                        <?php if(count($categories) > 0): ?>
                         <select name="category" class="form-control" id="">
-                            <option value="1">Education</option>
+                            <?php foreach ($categories as $category): ?>
+                                <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
+                            <?php endforeach; ?>
                         </select>
+                        <?php else: ?>
+                        <div class="alert alert-warning">No categories in database.</div>
+                        <?php endif; ?>
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" name="name" placeholder="Event Name">
