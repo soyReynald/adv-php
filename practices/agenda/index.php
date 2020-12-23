@@ -149,42 +149,41 @@ $nextDay = 1;
     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"><i class="icon-calendar"></i> Add New Event</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="">
-                    <div class="form-group">
-                        <input type="text" name="date" class="form-control input-date" placeholder="Date">
-                    </div>
-                    <div class="form-group">
-                        <input type="time" name="time" class="form-control" placeholder="Time">
-                    </div>
-                    <div class="form-group">
-                        Category
-                        <?php if(count($categories) > 0): ?>
-                        <select name="category" class="form-control" id="">
-                            <?php foreach ($categories as $category): ?>
-                                <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
-                            <?php endforeach; ?>
-                        </select>
-                        <?php else: ?>
-                        <div class="alert alert-warning">No categories in database.</div>
-                        <?php endif; ?>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="name" placeholder="Event Name">
-                    </div>
-                    
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Save</button>
-            </div>
+            <form action="new.php" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="icon-calendar"></i> Add New Event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" name="date" class="form-control input-date" placeholder="Date">
+                        </div>
+                        <div class="form-group">
+                            <input type="time" name="time" class="form-control" placeholder="Time">
+                        </div>
+                        <div class="form-group">
+                            Category
+                            <?php if(count($categories) > 0): ?>
+                            <select name="category" class="form-control" id="">
+                                <?php foreach ($categories as $category): ?>
+                                    <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                            <?php else: ?>
+                            <div class="alert alert-warning">No categories in database.</div>
+                            <?php endif; ?>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Event Name">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
             </div>
         </div>
     </div>
