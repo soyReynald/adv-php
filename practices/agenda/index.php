@@ -29,6 +29,12 @@ $firstWeekDay = date('w', $firstDay);
 
 $monthDays = cal_days_in_month(CAL_GREGORIAN, $month, $year);
 
+$lastDay = strtotime($year.'-'.$month.'-'.$monthDays);
+
+$from = date ('Y-m-d', $firstDay);
+$to = date('Y-m-d', $lastDay);
+
+
 if($month == 1){
     $prevMonth = 12;
     $prevYear = $year -1;
@@ -51,6 +57,31 @@ $startWeekDay = $prevMonthDays - $firstWeekDay + 1;
 $weekCount = 1;
 $dayCount = 1;
 $nextDay = 1;
+
+$eventsQuery = "SELECT 
+                    DATE_FORMAT(date, '%d%m%Y') AS arr_index,
+                    events.name,
+                    categories.name AS category,
+                    icon,
+                    date
+                FROM 
+                    events, categories
+                WHERE 
+                    categories.id = cat
+                AND
+                    date BETWEEN '$from' AND '$to'
+                ORDER BY
+                    date";
+
+$rsEvents = $con->query($eventsQuery) or die($con->error);
+
+$events = array();
+
+while($row = $rsEvents->fetch_object()){
+    $events[$row->arr_index][] = $row;
+}
+
+$con->close();
 
 ?>
 <!DOCTYPE html>
@@ -127,7 +158,22 @@ $nextDay = 1;
                     }
                     
                     while($dayCount <= $monthDays){
-                        echo '<td><button data-date="'.$year.'-'.$month.'-'.$dayCount.'" class="btn btn-sm btn-dark">' . $dayCount++ . '</button></td>';
+                        echo '<td>';
+                        echo '<button data-date="'.$year.'-'.$month.'-'.$dayCount.'" class="btn btn-sm btn-dark">';
+                        echo $dayCount;
+                        echo '</button>';
+                        $index = str_pad($dayCount, 2, '0', STR_PAD_LEFT) . $month . $year;
+                        if(isset($events[$index])){
+                            echo "<small>";
+                            echo '<span class="badge badge-dark float-right">'. count($events[$index]) .' Events </span>';
+                            echo "<ul>";
+                                foreach($events[$index] as $event){
+                                    echo "<li>" . $event->name . "</li>";
+                                }
+                            echo "</ul></small>";
+                        }
+                        echo '</td>';
+                        $dayCount++;
                         $weekCount++;
 
                         if($weekCount > 7){

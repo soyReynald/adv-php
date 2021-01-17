@@ -15,7 +15,7 @@ $name = $con->escape_string(strip_tags($_POST['name']));
 
 $dateFixed = date('Y-m-d h:i:s', strtotime($date . ' ' . $time));
 
-$sql = "INSERT INTO events (category, name, date) VALUES ('$category', '$name', '$dateFixed')";
+$sql = "INSERT INTO events (cat, name, date) VALUES ('$category', '$name', '$dateFixed')";
 
 $con->query($sql) or die($con->error);
 
