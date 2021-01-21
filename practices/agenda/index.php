@@ -59,11 +59,12 @@ $dayCount = 1;
 $nextDay = 1;
 
 $eventsQuery = "SELECT 
+                    events.id,
                     DATE_FORMAT(date, '%d%m%Y') AS arr_index,
                     events.name,
                     categories.name AS category,
                     icon,
-                    date
+                    DATE_FORMAT(date, '%l:%i%p') AS time
                 FROM 
                     events, categories
                 WHERE 
@@ -113,6 +114,24 @@ $con->close();
                 $("#modal").modal();
             })
 
+            $('.btn-event').on('click', function(){
+                var idEvent = $(this).data('id');
+                $.ajax({
+                    url: 'ajax.php',
+                    data: {id: idEvent},
+                    type: 'GET',
+                    dataType: 'json'
+                }).done(function(data){
+
+                    $('#editEvent .input-date').val(data.date);
+                    $('#editEvent .input-time').val(data.time);
+                    $('#editEvent .select-categories').val(data.cat);
+                    $('#editEvent .input-name').val(data.name);
+                    $('#editEvent .input-id').val(data.id);
+                    
+                    $("#editEvent").modal();
+                })
+            })
         });
     </script>
 </head>
@@ -163,12 +182,15 @@ $con->close();
                         echo $dayCount;
                         echo '</button>';
                         $index = str_pad($dayCount, 2, '0', STR_PAD_LEFT) . $month . $year;
-                        if(isset($events[$index])){
+                        if(isset($events[$index]) && is_array($events[$index])){
                             echo "<small>";
                             echo '<span class="badge badge-dark float-right">'. count($events[$index]) .' Events </span>';
                             echo "<ul>";
                                 foreach($events[$index] as $event){
-                                    echo "<li>" . $event->name . "</li>";
+                                    echo '<li><a title="' . strtolower($event->time) . ' - ' . $event->category . '" href="#" data-id="'.$event->id.'" class="btn-event">';
+                                    echo '<i class="'.$event->icon.'"></i> '; 
+                                    echo $event->name;
+                                    echo '</a></li>';
                                 }
                             echo "</ul></small>";
                         }
@@ -191,7 +213,7 @@ $con->close();
         </table>
     </div>
 
-    <!-- Modal -->
+    <!-- Add Event Modal -->
     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -204,7 +226,7 @@ $con->close();
                 </div>
                 <div class="modal-body">
                         <div class="form-group">
-                            <input type="text" name="date" class="form-control input-date" placeholder="Date">
+                            <input type="text" name="date" class="form-control" placeholder="Date">
                         </div>
                         <div class="form-group">
                             <input type="time" name="time" class="form-control" placeholder="Time">
@@ -233,5 +255,51 @@ $con->close();
             </div>
         </div>
     </div>
+    <!-- Add Event Modal -->
+    <!-- Edit Event Modal -->
+    <div class="modal fade" id="editEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <form action="edit.php" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="icon-calendar"></i> Edit Event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" name="date" class="form-control input-date" placeholder="Date">
+                        </div>
+                        <div class="form-group">
+                            <input type="time" name="time" class="form-control input-time" placeholder="Time">
+                        </div>
+                        <div class="form-group">
+                            Category
+                            <?php if(count($categories) > 0): ?>
+                            <select name="category" class="form-control select-categories" id="">
+                                <?php foreach ($categories as $category): ?>
+                                    <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                            <?php else: ?>
+                            <div class="alert alert-warning">No categories in database.</div>
+                            <?php endif; ?>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-name" name="name" placeholder="Event Name">
+                        </div>
+                        <input class="input-id" type="hidden" name="id">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger">Remove Event</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Event Modal -->
 </body>
 </html>
