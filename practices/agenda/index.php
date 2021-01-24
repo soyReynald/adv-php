@@ -128,9 +128,15 @@ $con->close();
                     $('#editEvent .select-categories').val(data.cat);
                     $('#editEvent .input-name').val(data.name);
                     $('#editEvent .input-id').val(data.id);
+                    $('#editEvent .btn-remove').attr('data-event', data.id);
                     
                     $("#editEvent").modal();
                 })
+            })
+            $('.btn-remove').on('click', function(){
+                $("#removeEvent .btn-delete").attr('href', 'delete.php?id=' + $(this).attr('data-event'));
+                
+                $('#removeEvent').modal();
             })
         });
     </script>
@@ -292,7 +298,7 @@ $con->close();
                         <input class="input-id" type="hidden" name="id">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger">Remove Event</button>
+                    <button type="button" class="btn btn-danger btn-remove">Remove Event</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </div>
@@ -301,5 +307,28 @@ $con->close();
         </div>
     </div>
     <!-- Edit Event Modal -->
+    <!-- Remove Event Modal -->
+    <div class="modal fade" id="removeEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <form action="remove.php" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="icon-trash"></i> Remove Event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        Are you sure, you want to remove this event from your Calendar?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <a href="#" type="submit" class="btn btn-danger btn-delete">Remove</a>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- Remove Event Modal -->
 </body>
 </html>
