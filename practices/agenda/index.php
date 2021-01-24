@@ -110,7 +110,7 @@ $con->close();
             });
 
             $('.btn-dark').on('click', function(){
-                $(".input-date").val($(this).data('date'));
+                $("#modal .input-date").val($(this).data('date'));
                 $("#modal").modal();
             })
 
@@ -232,7 +232,7 @@ $con->close();
                 </div>
                 <div class="modal-body">
                         <div class="form-group">
-                            <input type="text" name="date" class="form-control" placeholder="Date">
+                            <input type="text" name="date" class="form-control input-date" placeholder="Date">
                         </div>
                         <div class="form-group">
                             <input type="time" name="time" class="form-control" placeholder="Time">
