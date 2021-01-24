@@ -1,89 +1,10 @@
 <?php
 
 require 'config/mysqli.php';
+require 'Models/Event.php';
+require 'Controllers/Events.php';
 
-$sql = "SELECT * FROM categories";
-$categories = array();
-$query = $con->query($sql);
-while($row = $query->fetch_object()){
-    $categories[]= $row;
-}
-
-$pattern = "/[0-9]{2}-[0-9]{4}/";
-
-if(isset($_GET['month']) && preg_match($pattern, $_GET['month'])){
-    $monthArr = explode('-', $_GET['month']);
-    $month = $monthArr[0];
-    $year = $monthArr[1];
-}else{
-    $month = date('m');
-    $year = date('Y');
-}
-
-
-
-$firstDay = strtotime($year . '-'. $month . '-1');
-// Necesito estudiar strtotime()
-$monthName = date('F', $firstDay);
-$firstWeekDay = date('w', $firstDay);
-
-$monthDays = cal_days_in_month(CAL_GREGORIAN, $month, $year);
-
-$lastDay = strtotime($year.'-'.$month.'-'.$monthDays);
-
-$from = date ('Y-m-d', $firstDay);
-$to = date('Y-m-d', $lastDay);
-
-
-if($month == 1){
-    $prevMonth = 12;
-    $prevYear = $year -1;
-}else{
-    $prevMonth = $month - 1;
-    $prevYear = $year;
-}
-
-if($month == 12){
-    $nextMonth = 1;
-    $nextYear = $year + 1;
-}else{
-    $nextMonth = $month + 1;
-    $nextYear = $year;
-}
-
-$prevMonthDays = cal_days_in_month(CAL_GREGORIAN, $prevMonth, $prevYear);
-// Necesito estudiar cal_days_in_month()
-$startWeekDay = $prevMonthDays - $firstWeekDay + 1;
-$weekCount = 1;
-$dayCount = 1;
-$nextDay = 1;
-
-$eventsQuery = "SELECT 
-                    events.id,
-                    DATE_FORMAT(date, '%d%m%Y') AS arr_index,
-                    events.name,
-                    categories.name AS category,
-                    icon,
-                    DATE_FORMAT(date, '%l:%i%p') AS time
-                FROM 
-                    events, categories
-                WHERE 
-                    categories.id = cat
-                AND
-                    date BETWEEN '$from' AND '$to'
-                ORDER BY
-                    date";
-
-$rsEvents = $con->query($eventsQuery) or die($con->error);
-
-$events = array();
-
-while($row = $rsEvents->fetch_object()){
-    $events[$row->arr_index][] = $row;
-}
-
-$con->close();
-
+$categories = getCategories($con);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -117,7 +38,7 @@ $con->close();
             $('.btn-event').on('click', function(){
                 var idEvent = $(this).data('id');
                 $.ajax({
-                    url: 'ajax.php',
+                    url: 'controllers/ajax.php',
                     data: {id: idEvent},
                     type: 'GET',
                     dataType: 'json'
@@ -134,7 +55,7 @@ $con->close();
                 })
             })
             $('.btn-remove').on('click', function(){
-                $("#removeEvent .btn-delete").attr('href', 'delete.php?id=' + $(this).attr('data-event'));
+                $("#removeEvent .btn-delete").attr('href', 'controllers/delete.php?id=' + $(this).attr('data-event'));
                 
                 $('#removeEvent').modal();
             })
@@ -159,71 +80,20 @@ $con->close();
                 </form>
             </div>
             <div class="col-md-8">
-                <h4 class="float-right"><?php echo $monthName." ". $year; ?></h4>
+                <h4 class="float-right"><?php getMonthName(); ?></h4>
             </div>
         </div>
-
-        <table class="table">
-            <tr>
-                <th>Sun</th>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-                <th>Sat</th>
-            </tr>
-            <tr>
-                <?php
-
-                    while($firstWeekDay > 0){
-                        echo '<td class="text-muted">' . $startWeekDay++ . '</td>';
-                        $firstWeekDay--;
-                        $weekCount++;
-                    }
-                    
-                    while($dayCount <= $monthDays){
-                        echo '<td>';
-                        echo '<button data-date="'.$year.'-'.$month.'-'.$dayCount.'" class="btn btn-sm btn-dark">';
-                        echo $dayCount;
-                        echo '</button>';
-                        $index = str_pad($dayCount, 2, '0', STR_PAD_LEFT) . $month . $year;
-                        if(isset($events[$index]) && is_array($events[$index])){
-                            echo "<small>";
-                            echo '<span class="badge badge-dark float-right">'. count($events[$index]) .' Events </span>';
-                            echo "<ul>";
-                                foreach($events[$index] as $event){
-                                    echo '<li><a title="' . strtolower($event->time) . ' - ' . $event->category . '" href="#" data-id="'.$event->id.'" class="btn-event">';
-                                    echo '<i class="'.$event->icon.'"></i> '; 
-                                    echo $event->name;
-                                    echo '</a></li>';
-                                }
-                            echo "</ul></small>";
-                        }
-                        echo '</td>';
-                        $dayCount++;
-                        $weekCount++;
-
-                        if($weekCount > 7){
-                            echo '</tr><tr>';
-                            $weekCount = 1;
-                        }
-                    }
-
-                    while($weekCount > 1 && $weekCount <= 7){
-                        echo '<td class="text-muted">' . $nextDay++ . '</td>';
-                        $weekCount++;
-                    }
-                ?>
-            </tr>
-        </table>
+        <!-- SELECT DATE FORM -->
+        <!-- Calendar -->
+        <?php echo drawCalendar($con); ?>
+        <!-- Calendar -->
     </div>
 
     <!-- Add Event Modal -->
     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-            <form action="new.php" method="post">
+            <form action="controllers/new.php" method="post">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel"><i class="icon-calendar"></i> Add New Event</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -266,7 +136,7 @@ $con->close();
     <div class="modal fade" id="editEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-            <form action="edit.php" method="post">
+            <form action="controllers/edit.php" method="post">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel"><i class="icon-calendar"></i> Edit Event</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -332,3 +202,4 @@ $con->close();
     <!-- Remove Event Modal -->
 </body>
 </html>
+<?php $con->close(); ?>
