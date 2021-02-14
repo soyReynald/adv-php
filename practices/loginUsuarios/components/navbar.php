@@ -15,14 +15,14 @@
                 <a class="nav-link" href="#">Profile permissions</a>
             </li>
         </ul>
-
-        <form class="form-inline">
-            <input type="text" class="form-control mr-sm-2" placeholder="Username">
-            <input type="password" class="form-control mr-sm-2" placeholder="Password">
+        <?php if(!isset($_SESSION['user'])): ?>
+        <form class="form-inline" action="controllers/loginUser.php" method="post">
+            <input type="text" name="username" class="form-control mr-sm-2" placeholder="Username">
+            <input type="password" name="password" class="form-control mr-sm-2" placeholder="Password">
             <button class="btn btn-outline-success" type="submit">Login</button>
         </form>
-
-        <a href="#" class="btn btn-outline-danger">Logout</a>
-
+        <?php else: ?>
+        <a href="controllers/logout.php" class="btn btn-outline-danger">Logout</a>
+        <?php endif; ?>
     </div>
 </nav> 

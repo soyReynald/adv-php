@@ -1,3 +1,11 @@
+<?php
+require_once 'models/user.php';
+openSession();
+
+if(!isset($_SESSION['user']) || $_SESSION['user']->profile > 2){
+    header('Location: index.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,4 +31,4 @@
     </div>
 </body>
 
-</html> 
+</html>

@@ -1,3 +1,11 @@
+<?php
+require_once 'models/user.php';
+openSession();
+
+if(!isset($_SESSION['user']) || $_SESSION['user']->profile > 1){
+    header('Location: index.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,3 +1,9 @@
+<?php
+require 'models/user.php';
+openSession();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,19 +26,21 @@
         <h3>Create user</h3>
         <a class="btn btn-success" href="create_user.php">Create user</a>
         <hr>
-
+        <?php if(isset($_SESSION['user'])): ?>
         <h3>Show users</h3>
         <a class="btn btn-info" href="show_user.php">Show users</a>
         <hr>
-
-        <h3>Edit user</h3>
-        <a class="btn btn-warning" href="edit_user.php">Edit user</a>
-        <hr>
-
-        <h3>Delete user</h3>
-        <a class="btn btn-danger" href="delete_user.php">Delete user</a>
-        <hr>
-
+            <?php if($_SESSION['user']->profile < 3): ?>
+            <h3>Edit user</h3>
+            <a class="btn btn-warning" href="edit_user.php">Edit user</a>
+            <hr>
+                <?php if($_SESSION['user']->profile < 2): ?>
+                <h3>Delete user</h3>
+                <a class="btn btn-danger" href="delete_user.php">Delete user</a>
+                <hr>
+                <?php endif; ?>
+            <?php endif; ?>
+        <?php endif; ?>
     </div>
 </body>
 
