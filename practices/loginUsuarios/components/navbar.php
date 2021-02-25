@@ -12,7 +12,7 @@
                 <a class="nav-link" href="create_user.php">Create account</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Profile permissions</a>
+                <a class="nav-link" href="permissions.php">Profile permissions</a>
             </li>
         </ul>
         <?php if(!isset($_SESSION['user'])): ?>

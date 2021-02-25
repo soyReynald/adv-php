@@ -63,6 +63,58 @@ function getProfiles($pdo){
     }
 }
 
+function getPermissions($pdo){
+
+    $profiles = getProfiles($pdo);
+    $proPerm = getProPerm($pdo);
+
+    $all = array();
+
+    foreach($profiles as $profile){
+        $query = "SELECT * FROM permissions";
+        $stmt = $pdo->prepare($query);
+
+        $stmt->execute() or die(implode(' >> ', $stmt->errorInfo()));
+
+        if($stmt->rowCount() > 0){
+            $permissions = array();
+            while($row = $stmt->fetch(PDO::FETCH_OBJ)){
+                $concat = $profile->id . ',' . $row->id;
+                $row->set = in_array($concat, $proPerm);
+                $permissions[] = $row;
+            }
+        } else {
+            return false;
+        }
+
+        $all[] = array('id'=>$profile->id, 'name'=>$profile->profile, 'permissions'=>$permissions);
+    }
+
+    return $all;
+}
+
+function getProPerm($pdo){
+    
+    $query = "SELECT CONCAT(profile, ',', permission) AS perm FROM profile_perm";
+
+    $stmt = $pdo->prepare($query);
+
+    $stmt->execute() or die(implode(' >> ', $stmt->errorInfo()));
+
+    if($stmt->rowCount() > 0){
+        $perm = array();
+
+        while($row = $stmt->fetch(PDO::FETCH_OBJ)){
+            $perm[] = $row->perm;
+        }
+    } else {
+        return false;
+    }
+
+    return $perm;
+
+}
+
 function openSession(){
     if(!isset($_SESSION)){
         session_start();
