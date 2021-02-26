@@ -27,16 +27,26 @@ if(!isset($_SESSION['user']) || $_SESSION['user']->profile > 1){
 </head>
 
 <body>
-    <pre>
-    <?php 
-        print_r($permissions);
-    ?>
-    </pre>
     <?php require 'components/navbar.php'; ?>
     <div class="container">
 
         <h3>Set profile permissions</h3>
-
+        <?php foreach($permissions as $profile): ?>
+            <strong><?= $profile['name']; ?></strong>
+            <form action="controllers/setPermissions.php" method="post">
+                <input name="profile" type="hidden" value="<?= $profile['id'] ?>">
+                <?php foreach($profile['permissions'] as $permission): ?>
+                    <div>
+                        <label for="">
+                            <input name="permissions[]" value="<?= $permission->id ?>" type="checkbox" <?= $permission->set ? 'checked' : '' ?>>
+                            <?= $permission->description ?>
+                        </label>
+                    </div>
+                <?php endforeach; ?>
+                <button type="submit" class="btn btn-outline-success">Save</button>
+            </form>
+            <hr>
+        <?php endforeach; ?>
     </div>
 </body>
 
