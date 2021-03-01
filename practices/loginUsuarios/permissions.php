@@ -5,11 +5,9 @@ openSession();
 
 $permissions = getPermissions($pdo);
 
-/*
-if(!isset($_SESSION['user']) || $_SESSION['user']->profile > 1){
+if(!isset($_SESSION['user']) || !in_array('C_USER', $_SESSION['user']->perm)){
     header('Location: index.php');
 }
-*/
 ?>
 <!DOCTYPE html>
 <html lang="en">

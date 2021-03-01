@@ -2,7 +2,7 @@
 require_once 'models/user.php';
 openSession();
 
-if(!isset($_SESSION['user'])){
+if(!isset($_SESSION['user']) || !in_array('R_USER', $_SESSION['user']->perm){
     header('Location: index.php');
 }
 ?>

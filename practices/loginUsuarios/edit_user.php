@@ -2,9 +2,11 @@
 require_once 'models/user.php';
 openSession();
 
-if(!isset($_SESSION['user']) || $_SESSION['user']->profile > 2){
+if(!isset($_SESSION['user']) || !in_array('U_USER', $_SESSION['user']->perm)){
     header('Location: index.php');
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

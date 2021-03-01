@@ -3,6 +3,10 @@ require_once 'pdo.php';
 require_once 'models/user.php';
 openSession();
 
+if(!isset($_SESSION['user']) || !in_array('C_USER', $_SESSION['user']->perm)){
+    header('Location: index.php');
+}
+
 $profiles = getProfiles($pdo);
 ?>
 

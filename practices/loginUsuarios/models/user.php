@@ -41,6 +41,20 @@ function userLogin($username, $password, $pdo){
 
         if(password_verify($password, $user->password)){
             openSession();
+
+            $query = "SELECT code FROM profile_perm, permissions WHERE id = permission AND profile = :profile";
+            $stmt = $pdo->prepare($query);
+
+            $stmt->bindParam(':profile', $user->profile);
+
+            $stmt->execute() or die(implode(' >> ', $stmt->errorInfo()));
+
+            $user->perm = array();
+
+            while($row = $stmt->fetch(PDO::FETCH_OBJ)){
+                $user->perm[] = $row->code;
+            }
+
             $_SESSION['user'] = $user;
             return true;
         } else {
@@ -80,7 +94,11 @@ function getPermissions($pdo){
             $permissions = array();
             while($row = $stmt->fetch(PDO::FETCH_OBJ)){
                 $concat = $profile->id . ',' . $row->id;
-                $row->set = in_array($concat, $proPerm);
+                if($proPerm){
+                    $row->set = in_array($concat, $proPerm);
+                }else {
+                    $row->set = false;
+                }
                 $permissions[] = $row;
             }
         } else {
@@ -114,6 +132,29 @@ function getProPerm($pdo){
     return $perm;
 
 }
+
+function setPermissions($profile, $permissions, $pdo){
+    $query = "DELETE FROM profile_perm WHERE profile = :profile";
+    $stmt = $pdo->prepare($query);
+
+    $stmt->bindParam(':profile', $profile);
+
+    $stmt->execute() or die(implode(' >> ', $stmt->errorInfo()));
+
+    if(isset($permissions)){
+        $query = "INSERT INTO profile_perm (profile, permission) VALUES (:profile, :permission)";
+
+        $stmt = $pdo->prepare($query);
+    
+        foreach($permissions as $permission){
+            $data = array('profile'=>$profile, 'permission'=>$permission);
+            $stmt->execute($data) or die($stmt->errorInfo());
+        }
+    }
+
+    return true;
+}
+
 
 function openSession(){
     if(!isset($_SESSION)){
