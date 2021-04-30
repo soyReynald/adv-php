@@ -20,4 +20,34 @@ if($consult->fetchColumn() == 0){
 }
 
 
+$pdo->beginTransaction();
+$errors = array();
+
+$query = "UPDATE accounts SET balance = balance - ? WHERE number = ?";
+$stmt = $pdo->prepare($query);
+$successA = $stmt->execute(array($amount, $from));
+
+$query = "UPDATE accounts SET balance = balance + :amount WHERE number = :to";
+$stmt = $pdo->prepare($query);
+
+$stmt->bindParam(':amount', $amount);
+$stmt->bindParam(':to', $to);
+$successB = $stmt->execute();
+$errors[] = $stmt->errorInfo();
+
+$query = "INSERT INTO movements 
+                (account_from, account_to, amount, description, date) 
+            VALUES (?, ?, ?, ?, NOW())";
+$stmt = $pdo->prepare($query);
+$successC = $stmt->execute(array($from, $to, $amount, $description));
+$errors[] = $stmt->errorInfo();
+if($successA && $successB && $successC){
+    $pdo->commit();
+    header('Location: index.php');
+} else {
+    print_r($errors);
+    $pdo->rollback();
+    exit('Transfer not done!');
+}
+
 ?>
