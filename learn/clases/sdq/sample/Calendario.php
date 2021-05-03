@@ -1,6 +1,6 @@
 <?php
 
-# namespace Fecha;
+//namespace Fecha;
 
 class Calendario {
 

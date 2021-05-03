@@ -1,7 +1,10 @@
 <?php
+require 'sample/Calculos.php';
 
-require 'sample/Cuadrado.php';
-$cuadrado = new Cuadrado;
+//Use Fecha\Calendario as Calendar;
+
+$cal = new Calendario(5, 2021, true);
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +15,10 @@ $cuadrado = new Cuadrado;
 <body>
 
 <?php 
-	$cuadrado->drawSquare(10, 10);
+	echo $cal->dibujar();
+	echo "Nombre del dia de hoy: ". Calculos::$today;
+	echo "<br/>";
+	echo "Dias del mes: ". Calculos::getCurrentMonthDays();
 ?>
 
 </body>
