@@ -1,13 +1,16 @@
-<?php require_once('config/conexion.php');
+<?php 
+
+require_once('models/Task.php');
 
 @$title = $_POST['title'];
 @$task = $_POST['task'];
-$sql = "INSERT INTO tasks (title, task, date) VALUES ('$title', '$task', NOW())";
 
-$result = $con->query($sql);
+$newTask = new Task($title, $task);
 
-if($result){
+if($newTask){
     header("Location: index.php");
+} else {
+    exit('Error inserting the task');
 }
 
 ?>
