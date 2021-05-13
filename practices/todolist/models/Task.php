@@ -20,6 +20,31 @@ class Task {
         return $inserted;
     }
 
+    public static function allTasks(){
+        self::mysqli();
+
+        $sql = "SELECT * FROM tasks";
+        $rsAllTasks = self::$mysqli->query($sql);
+
+        if($rsAllTasks->num_rows > 0){
+            $tasks = array();
+
+            while($row = $rsAllTasks->fetch_object()){
+                $tasks[] = $row;
+            }
+
+            //$rsAllTask->free();
+
+            $response = $tasks;
+        } else {
+            $response = false;
+        }
+
+        self::$mysqli->close();
+
+        return $response;
+    }
+
     protected static function mysqli(){
         if(!isset(self::$mysqli)){
             self::$mysqli = mysqli_connect(self::$server, self::$user, self::$pass, self::$database) or die(mysqli_connect_error());
