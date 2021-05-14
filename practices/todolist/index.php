@@ -1,3 +1,8 @@
+<?php
+    require_once 'models/Task.php';
+
+    $tasks = Task::allTasks();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,20 +16,17 @@
     <div class="container">
         <h1>To do list</h1>
         <a href="add-task.php" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Agregar </a>
-        <?php require_once('config/conexion.php'); ?>
-        <?php
-            $sql = "SELECT * FROM tasks";
-            $result = $con->query($sql);
-            $row = "";
-            while($row = $result->fetch_assoc()): ?>
+        <?php if($tasks): ?>
+        <?php foreach($tasks as $task): ?>
             <div class="task_container border form-group">
-                <a href="edit_task.php?id=<?php echo $row['id']; ?>" class="btn btn-warning btn-xs pull-right"><i class="fa fa-edit"></i></a>
-                <a href="delete_task.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-xs pull-right"><i class="fa fa-trash"></i></a>
-                <h2><?php echo $row['title']; ?></h2>
-                <p><?php echo $row['task']; ?></p>
+                <a href="edit_task.php?id=<?= $task->id; ?>" class="btn btn-warning btn-xs pull-right"><i class="fa fa-edit"></i></a>
+                <a href="delete_task.php?id=<?= $task->id; ?>" class="btn btn-danger btn-xs pull-right"><i class="fa fa-trash"></i></a>
+                <h2><?= $task->title; ?></h2>
+                <p><?= $task->task; ?></p>
             </div>
-            <?php endwhile; ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </div>
-    <?php require_once('config/desconectar.php'); ?>
+    
 </body>
 </html>
