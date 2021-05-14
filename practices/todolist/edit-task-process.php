@@ -1,16 +1,16 @@
 <?php
-require_once('config/conexion.php');
+require_once('models/Task.php');
 
 $title = $_POST['title'];
 $task = $_POST['task'];
-$id = $_GET['id'];
+$id = $_POST['id'];
 
-$sql = "UPDATE tasks SET title = '$title', task = '$task' WHERE id = $id";
+$editTask = Task::editTask($title, $task, $id);
 
-$rs = $con->query($sql);
-
-if(!$rs->error){
+if(!$editTask->error){
     header("Location: index.php");
+} else {
+    exit('Error inserting the task');
 }
 
 ?>
