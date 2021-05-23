@@ -19,8 +19,8 @@
         <?php if($tasks): ?>
         <?php foreach($tasks as $task): ?>
             <div class="task_container border form-group">
-                <a href="edit_task.php?id=<?= $task->id; ?>" class="btn btn-warning btn-xs pull-right"><i class="fa fa-edit"></i></a>
-                <a href="delete_task.php?id=<?= $task->id; ?>" class="btn btn-danger btn-xs pull-right"><i class="fa fa-trash"></i></a>
+                <a href="edit-task.php?id=<?= $task->id; ?>" class="btn btn-warning btn-xs pull-right"><i class="fa fa-edit"></i></a>
+                <a href="controllers/deleteTask.php?id=<?= $task->id; ?>" class="btn btn-danger btn-xs pull-right"><i class="fa fa-trash"></i></a>
                 <h2><?= $task->title; ?></h2>
                 <p><?= $task->task; ?></p>
             </div>

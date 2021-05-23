@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h2>Agregar tarea</h2>
-        <form action="add-task-process.php" method="POST">
+        <form action="controllers/addTask.php" method="POST">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" name="title" class="form-control">

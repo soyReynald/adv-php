@@ -1,6 +1,6 @@
 <?php 
 
-require_once('models/Task.php');
+require_once('../models/Task.php');
 
 @$title = $_POST['title'];
 @$task = $_POST['task'];
@@ -8,7 +8,7 @@ require_once('models/Task.php');
 $newTask = new Task($title, $task);
 
 if($newTask){
-    header("Location: index.php");
+    header("Location: ../");
 } else {
     exit('Error inserting the task');
 }
