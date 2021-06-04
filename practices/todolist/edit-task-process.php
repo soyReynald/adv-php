@@ -10,7 +10,7 @@ $editTask = Task::editTask($title, $task, $id);
 if(!$editTask->error){
     header("Location: index.php");
 } else {
-    exit('Error inserting the task');
+    exit('Error editing the task');
 }
 
 ?>
