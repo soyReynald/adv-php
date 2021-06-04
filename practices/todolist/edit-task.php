@@ -19,7 +19,7 @@ $task = Task::getTask($id);
 <body>
     <div class="container">
         <h2>Edit tarea</h2>
-        <form action="edit-task-process.php" method="POST">
+        <form action="controllers/editTask.php" method="POST">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" name="title" class="form-control" value="<?= $task->title; ?>">

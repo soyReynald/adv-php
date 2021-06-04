@@ -82,6 +82,18 @@ class Task {
         return $edited;
     }
 
+    public static function deleteTask($id){
+        $id = self::clean($id);
+
+        $sql = "DELETE FROM tasks WHERE id = $id";
+
+        $deleted = self::$mysqli->query($sql);
+
+        self::$mysqli->close();
+
+        return $deleted;
+    }
+
     protected static function mysqli(){
         if(!isset(self::$mysqli)){
             self::$mysqli = mysqli_connect(self::$server, self::$user, self::$pass, self::$database) or die(mysqli_connect_error());
