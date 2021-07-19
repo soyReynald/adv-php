@@ -1,6 +1,5 @@
 <?php
 class Operacion {
-
     public $cantidadUno = 0;
     public $cantidadDos = 0;
     public $resultado = 0;
