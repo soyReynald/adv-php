@@ -15,5 +15,4 @@ echo $customer->getDatosPersonales();
 
 $customer->setCredito(40000);
 echo "<br/>".$customer->getCredito();
-
 ?>
