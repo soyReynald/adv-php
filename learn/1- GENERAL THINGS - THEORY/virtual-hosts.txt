@@ -1,0 +1,8 @@
+How to? Going to:
+
+xampp>apache>conf>extra>httpd-vhosts.conf
+
+Then:
+Windows/System32/drivers/etc/hosts
+
+Then restarting the xampp so the changes may be applied.
