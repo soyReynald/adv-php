@@ -1,0 +1,1 @@
+Every file is commented and usually before any block of code I explain what the code is about with a comment.
