@@ -1,0 +1,23 @@
+body {
+    margin-top: 30px;
+}
+
+.bg-light, footer {
+    background-color: #3c5a98 !important;
+}
+
+footer {
+    height: 60px;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.img-photo {
+    border: solid 1px #ccc;
+}
+
+.img-post {
+    border-radius: 50%;
+    width: 40px;
+}

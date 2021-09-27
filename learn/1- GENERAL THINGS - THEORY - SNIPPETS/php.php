@@ -34,7 +34,7 @@ Docs
 //-----> End Of Snippet or Class
 
 //-----> Starting a snippet or class
-// How to cut a text with an specific length...
+// How to cut a text with a specific length...
 <?php
 
     $string = 'This string is too long and will be cut short.';
