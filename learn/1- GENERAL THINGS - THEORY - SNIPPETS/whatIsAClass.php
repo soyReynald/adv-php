@@ -13,4 +13,7 @@ class Cars {
 
 // A method inside of the class is actually a function, but is called method because is inside of the class.
 
+
+// In classes we have "Access Control Modifiers", that are: private, public and protected
+
 ?>
