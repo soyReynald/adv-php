@@ -1,14 +1,14 @@
 <?php
 
 class App {
-    private $controller = 'Home';
+    private $controller = 'home';
     private $method = 'index';
-    private $params = array();
+    private $params = [];
 
     public function __construct(){
-        $url = $this->filterUrl();
+        $url = $this->parseUrl();
 
-        if(file_exists('app/controllers/' . $url[0] . '.php')){
+        if(isset($url) && file_exists('app/controllers/' . $url[0] . '.php')){
             $this->controller = $url[0];
             unset($url[0]);
         }
@@ -28,17 +28,13 @@ class App {
 
         $this->params = $url ? array_values($url) : [];
 
-        call_user_func_array(array($this->controller, $this->method), $this->params);
+        call_user_func_array([$this->controller, $this->method], $this->params);
         
     }
 
-    private function filterUrl(){
+    private function parseUrl(){
         if(isset($_GET['url'])){
-            $noSlash = rtrim($_GET['url'], '/');
-            $filteredUrl = filter_var($noSlash, FILTER_SANITIZE_URL);
-            $finalUrl = explode('/', $filteredUrl);
-            
-            return $finalUrl;
+            return $url = explode('/', filter_var(rtrim($_GET['url']), FILTER_SANITIZE_URL));
         }
     }
 }
