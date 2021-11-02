@@ -56,6 +56,20 @@ function metodoPut($query) {
         conectar();
         $sentence = $GLOBALS['pdo']->prepare($query);
         $sentence->execute();
+        $result = array_merge($_GET, $_POST);
+        $sentence->closeCursor();
+        desconectar();
+        return $result;
+    } catch (Exception $e){
+        die("Error: ". $e);
+    }
+}
+
+function metodoDelete($query) {
+    try{
+        conectar();
+        $sentence = $GLOBALS['pdo']->prepare($query);
+        $sentence->execute();
         $sentence->closeCursor();
         desconectar();
         return $_GET['id'];
