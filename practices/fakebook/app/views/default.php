@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/fontawesome.css">
+    <link rel="stylesheet" href="public/css/globals.css">
     <script src="public/js/bootstrap.js"></script>
     <script src="public/js/fontawesome.js"></script>
     <title>Fakebook</title>
