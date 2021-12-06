@@ -37,6 +37,17 @@ class App {
             return $url = explode('/', filter_var(rtrim($_GET['url']), FILTER_SANITIZE_URL));
         }
     }
+
+    static function basedir() {
+        $dir = explode('\\', dirname(__FILE__));
+
+        if(strstr(dirname(__FILE__), '/'))
+            $dir = explode('/', dirname(__FILE__));
+        
+        $basedir = "/" .  $dir[3] . "/" . $dir[4] . "/" . $dir[5]; //! This needs to be changed in production. This returns: /adv-php/practices/fakebook/
+
+        return $basedir;
+    }
 }
 
 ?>
