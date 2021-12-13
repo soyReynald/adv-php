@@ -1,5 +1,4 @@
 <?php
-require_once('Controller.php');
 
 class Model extends mysqli {
 
@@ -11,7 +10,7 @@ class Model extends mysqli {
             $this->config['server'],
             $this->config['user'],
             $this->config['password'],
-            $this->config['database'],
+            $this->config['database']
         );
 
         if(mysqli_connect_error()){

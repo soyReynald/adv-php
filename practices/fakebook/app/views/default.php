@@ -16,7 +16,7 @@
                         <input class="form-control" type="password" name="password" placeholder="_PASSWORD_">
                     </div>
                     <button class="btn btn-primary float-end"><?= '_LOGIN_' ?></button>
-                    <a href="account/create" class="btn btn-link"><?= '_CREATE ACCOUNT_' ?></a>
+                    <a href="account/" class="btn btn-link"><?= '_CREATE ACCOUNT_' ?></a>
                 </form>
             </div>
             <div class="col-9">Right</div>

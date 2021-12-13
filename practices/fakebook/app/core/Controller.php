@@ -10,6 +10,15 @@
 
         }
 
+        public function redirect($view) {
+            
+            if($view === '/')
+                header('Location: ' . App::basedir() . "/");
+            else
+                header('Location: ' . App::basedir() . "/" . $view);
+
+        }
+
     }
 
 ?>

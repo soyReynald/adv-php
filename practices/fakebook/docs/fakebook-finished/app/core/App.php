@@ -16,11 +16,9 @@ class App {
 
         $url = $this->parseUrl();
 
-        if(file_exists('app/controllers/' . $url[0] . '.php')){
-
+        if(isset($url) && file_exists('app/controllers/' . $url[0] . '.php')){
             $this->controller = $url[0];
             unset($url[0]);
-
         }
 
         require_once 'app/controllers/' . $this->controller . '.php';
@@ -60,19 +58,41 @@ class App {
 
     }
 
-    static function basedir(){
-
+    static function basedir() {
         $dir = explode('\\', dirname(__FILE__));
 
-        if(strstr(dirname(__FILE__), '/')){
+        if(strstr(dirname(__FILE__), '/'))
             $dir = explode('/', dirname(__FILE__));
-        }
-
-        $basedir = "/" . $dir[3];
+        
+        $basedir = "/" .  $dir[3] . "/" . $dir[4] . "/" .$dir[5] . "/" . $dir[6] . "/" . $dir[7]; //! This needs to be changed in production. This returns: /adv-php/practices/fakebook/
 
         return $basedir;
-
     }
+
+
+    // static function basedir() {
+    //     $dir = explode('\\', dirname(__FILE__));
+
+    //     if(strstr(dirname(__FILE__), '/'))
+    //         $dir = explode('/', dirname(__FILE__));
+        
+    //     $basedir = "/" .  $dir[3] . "/" . $dir[4] . "/" . $dir[5]; //! This needs to be changed in production. This returns: /adv-php/practices/fakebook/
+
+    //     return $basedir;
+    // }
+    // static function basedir(){
+
+    //     $dir = explode('\\', dirname(__FILE__));
+
+    //     if(strstr(dirname(__FILE__), '/')){
+    //         $dir = explode('/', dirname(__FILE__));
+    //     }
+
+    //     $basedir = "/" . $dir[3];
+
+    //     return $basedir;
+
+    // }
 
 }
 

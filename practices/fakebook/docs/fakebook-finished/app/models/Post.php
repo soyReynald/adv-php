@@ -56,10 +56,10 @@ class Post extends Model {
         $rsVisible = $this->query($sqlVisible);
 
         $visiblePosts = array();
-
-        while($row = $rsVisible->fetch_object()){
-            $visiblePosts[] = $row;
-        }
+        if($rsVisible)
+            while($row = $rsVisible->fetch_object()){
+                $visiblePosts[] = $row;
+            }
 
         return $visiblePosts;
 
