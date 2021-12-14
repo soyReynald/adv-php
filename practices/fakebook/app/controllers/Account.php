@@ -1,6 +1,6 @@
 <?php
 
-require_once('app/models/AccountModel.php');
+require_once('app/models/User.php');
 class Account extends Controller
 {
     public function index()
@@ -16,12 +16,11 @@ class Account extends Controller
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $user = new AccountModel;
-        if ($user->create($name, $username, $email, $password)) {
+        $user = new User($name, $username, $email, $password);
+        if ($user) 
             $this->redirect('/');
-        } else {
+        else 
             $user->error;
-        }
 
     }
 
