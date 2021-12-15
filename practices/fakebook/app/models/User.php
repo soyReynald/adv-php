@@ -9,7 +9,7 @@ class User extends Model
         $username = $this->cleanText($username);
         $email = $this->cleanText($email);
         $token = md5($email);
-        $sql = "INSERT INTO users (name, user, email, password) VALUES ('$name', '$username', '$email', '$password')";
+        $sql = "INSERT INTO users (name, user, email, password, token) VALUES ('$name', '$username', '$email', '$password', '$token')";
         return $this->query($sql);
     }
     private function cleanText ($text) {
