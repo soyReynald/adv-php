@@ -2,7 +2,8 @@
 
 class User extends Model
 {
-    public function __construct ($name, $username, $email, $password) {
+    public function __construct($name, $username, $email, $password)
+    {
         parent::__construct();
         $password = password_hash($password, PASSWORD_BCRYPT);
         $name = $this->cleanText($name);
@@ -12,8 +13,13 @@ class User extends Model
         $sql = "INSERT INTO users (name, user, email, password, token) VALUES ('$name', '$username', '$email', '$password', '$token')";
         return $this->query($sql);
     }
-    private function cleanText ($text) {
-        return $this->real_escape_string(strip_tags($text));
+
+    public function activate($token)
+    {
+        $token = $this->clean($token);
+
+        $query = "UPDATE users SET activate = 1 WHERE token = '$token'";
+
+        return $this->query($query);
     }
 }
-?>

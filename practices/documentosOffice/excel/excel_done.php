@@ -12,8 +12,8 @@ $stmt->execute() or die(implode(' >> ', $stmt->errorInfo()));
 
 $sales = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-header('Content-Type:application/pdf;charset=utf-8');
-header('Content-Disposition:attachment;filename=sheet.pdf');
+header('Content-Type:application/ms-excel;charset=utf-8');
+header('Content-Disposition:attachment;filename=sheet.xls');
 
 $header = false;
 $startRow = 2;
