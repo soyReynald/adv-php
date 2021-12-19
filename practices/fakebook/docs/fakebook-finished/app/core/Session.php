@@ -52,7 +52,7 @@ class Session {
 
     }
 
-    private function init(){
+    static function init(){
 
         if(!isset($_SESSION)){
 
@@ -63,5 +63,3 @@ class Session {
     }
 
 }
-
-?>

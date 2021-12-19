@@ -1,0 +1,13 @@
+{
+    "lang"                  :   "es",
+    "username"              :   "Usuario",
+    "name"                  :   "Nombre",
+    "email"                 :   "Correo",
+    "password"              :   "Contraseña",
+    "login"                 :   "Entrar",
+    "create_account"        :   "Crear cuenta",
+    "activation_subject"    :   "Activar su cuenta",
+    "hi"                    :   "Hola!",
+    "activation_message"    :   "Bienvenido a Fakebook y gracias por registrarte!",
+    "activation_link"       :   "Haga clic aquí para activar tu cuenta!"
+}

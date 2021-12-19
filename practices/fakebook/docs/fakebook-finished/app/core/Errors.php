@@ -56,7 +56,7 @@ class Errors {
 
     }
 
-    private function init(){
+    static function init(){
 
         if(!isset($_SESSION)){
 
@@ -67,5 +67,3 @@ class Errors {
     }
 
 }
-
-?>
