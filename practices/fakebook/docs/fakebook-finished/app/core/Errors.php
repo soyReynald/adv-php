@@ -56,7 +56,7 @@ class Errors {
 
     }
 
-    static function init(){
+    private static function init(){
 
         if(!isset($_SESSION)){
 
