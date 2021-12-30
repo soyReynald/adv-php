@@ -69,7 +69,7 @@ class Post extends Model {
 
         $idPost = $this->clean($idPost);
 
-        $sqlToggle = "UPDATE posts SET visible = IF(visible = 1, 0, 1) WHERE id = $idPost";
+        $sqlToggle = "UPDATE posts SET visible = IF(visible = 1, 0, 1) WHERE id = $idPost"; // Notes December 29/2021
 
         if(Session::get('User')->id_group < 3){
             return $this->query($sqlToggle);
@@ -78,7 +78,10 @@ class Post extends Model {
         }
 
     }
-
+    /*
+    * Notes December 30/2021
+    *
+    */
     public function delete($id){
 
         $sqlPost = "SELECT id_user FROM posts WHERE id = $id";
